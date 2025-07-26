@@ -1,8 +1,12 @@
 # src/__main__.py
 import argparse
 import logging
-from src.ext.ui.console_ui import ConsoleUI
-from src.ext.ui.gui_ui import run_gui
+from ext.ui.console_ui import ConsoleUI
+from ext.ui.gui_ui import run_gui
+import os
+import sys
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
 
 
 def setup_logging(level=logging.INFO):

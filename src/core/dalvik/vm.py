@@ -5,7 +5,7 @@ from typing import Dict, Any, Optional
 from .dex_parser import DEXParser
 from .interpreter import BytecodeInterpreter  # 新增导入
 from .jit import JITCompiler  # 新增导入
-from src.core.dalvik.gc import GarbageCollector  # 新增导入
+from .gc import GarbageCollector  # 新增导入
 
 logger = logging.getLogger(__name__)
 
