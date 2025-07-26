@@ -1,0 +1,1231 @@
+2025-07-26 17:31:31,785 - core.hardware.detector - ERROR - 检测CPU失败: Command 'wmic cpu get Name' returned non-zero exit status 1.
+2025-07-26 17:31:31,939 - core.hardware.detector - ERROR - 检测内存失败: Command 'wmic OS get TotalVisibleMemorySize' returned non-zero exit status 1.
+2025-07-26 17:31:32,096 - core.hardware.detector - ERROR - 检测存储失败: Command 'wmic logicaldisk where drivetype=3 get deviceid, freespace, size' returned non-zero exit status 1.
+2025-07-26 17:31:32,869 - core.hardware.detector - ERROR - 检测网络失败: 'utf-8' codec can't decode byte 0xc5 in position 13: invalid continuation byte
+2025-07-26 17:31:33,026 - core.hardware.detector - ERROR - 检测显示设备失败: Command 'wmic path win32_VideoController get Name' returned non-zero exit status 1.
+2025-07-26 17:31:33,193 - core.hardware.detector - ERROR - 检测摄像头失败: Command 'devcon find *camera*' returned non-zero exit status 1.
+2025-07-26 17:31:33,334 - core.hardware.detector - ERROR - 检测音频设备失败: Command 'wmic path win32_SoundDevice get Name' returned non-zero exit status 1.
+2025-07-26 17:31:33,334 - core.virtual_phone - INFO - 正在启动虚拟手机...
+2025-07-26 17:31:35,521 - core.hardware.abstraction - INFO - 虚拟相机已初始化
+2025-07-26 17:31:36,877 - core.hardware.abstraction - INFO - 虚拟麦克风已初始化
+2025-07-26 17:31:36,878 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889006593287355, 'longitude': -95.9581087015343, 'altitude': 964.189465200419, 'speed': 56.213227679653954, 'heading': 189.1309321336187}
+2025-07-26 17:31:36,878 - core.hardware.abstraction - INFO - 虚拟 GPS 已初始化，坐标: {'latitude': 49.889006593287355, 'longitude': -95.9581087015343, 'altitude': 964.189465200419, 'speed': 56.213227679653954, 'heading': 189.1309321336187}
+2025-07-26 17:31:36,886 - core.hardware.abstraction - INFO - 虚拟G盘已初始化: C:\Users\QQ/.virtual_phone/g_drive
+2025-07-26 17:31:36,897 - core.hardware.abstraction - INFO - 虚拟网络已初始化
+2025-07-26 17:31:36,897 - core.virtual_phone - INFO - 虚拟手机已启动
+2025-07-26 17:31:37,820 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:37,880 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88890659415204, 'longitude': -95.95807236954934, 'altitude': 964.2545007887504, 'speed': 57.1385288336282, 'heading': 189.0613156392373}
+2025-07-26 17:31:38,619 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:38,881 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88893914085252, 'longitude': -95.95810515785827, 'altitude': 963.7854289703549, 'speed': 56.20634547802073, 'heading': 189.28250493979237}
+2025-07-26 17:31:39,433 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:39,715 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:39,883 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888869831484904, 'longitude': -95.95818533074534, 'altitude': 964.241378714826, 'speed': 55.986558782404984, 'heading': 188.95537949761476}
+2025-07-26 17:31:40,660 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:40,790 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:40,884 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88881448021668, 'longitude': -95.95818708707147, 'altitude': 964.9362631973244, 'speed': 56.362953066602074, 'heading': 189.2987039682569}
+2025-07-26 17:31:41,131 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:31:41,538 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:41,885 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888751971478854, 'longitude': -95.95816074719424, 'altitude': 965.4754496846939, 'speed': 55.85473827174192, 'heading': 188.58255731210937}
+2025-07-26 17:31:42,439 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:42,888 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88873653123225, 'longitude': -95.95814415460937, 'altitude': 966.2427089414166, 'speed': 55.78877012561623, 'heading': 188.57900353280797}
+2025-07-26 17:31:42,925 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:31:43,242 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:43,592 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:43,890 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88882040026615, 'longitude': -95.95815490782518, 'altitude': 966.7043890228113, 'speed': 56.72769185794195, 'heading': 188.20255384917078}
+2025-07-26 17:31:44,020 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:44,634 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:44,891 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88888575869094, 'longitude': -95.95810706198598, 'altitude': 966.0175035849447, 'speed': 57.43479288668171, 'heading': 187.78644947934288}
+2025-07-26 17:31:45,584 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:45,892 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888971881097945, 'longitude': -95.95807098112775, 'altitude': 965.2671535680037, 'speed': 56.73240288483521, 'heading': 188.76464658756214}
+2025-07-26 17:31:45,907 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:46,230 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:46,893 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888999391168646, 'longitude': -95.95798842675656, 'altitude': 965.0901235410846, 'speed': 56.37386389380926, 'heading': 189.00557621130093}
+2025-07-26 17:31:47,186 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:47,807 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:31:47,894 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888997882836314, 'longitude': -95.95799855203761, 'altitude': 965.9547408857101, 'speed': 56.89716575587643, 'heading': 189.8432786443144}
+2025-07-26 17:31:48,200 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:48,654 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:48,874 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:48,896 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88895713272138, 'longitude': -95.9580010496276, 'altitude': 966.245967193256, 'speed': 57.552525642127534, 'heading': 190.16809423867667}
+2025-07-26 17:31:49,051 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:49,342 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:49,743 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:49,897 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888900675391824, 'longitude': -95.95793352406928, 'altitude': 966.2294234928983, 'speed': 57.74600960799999, 'heading': 189.2494004631364}
+2025-07-26 17:31:49,971 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:50,306 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:50,679 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:50,898 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88886684008102, 'longitude': -95.95788121863049, 'altitude': 966.4713474054846, 'speed': 58.418136624308794, 'heading': 188.43617215983156}
+2025-07-26 17:31:51,388 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:51,900 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88883667679354, 'longitude': -95.95786430204649, 'altitude': 966.1156717174234, 'speed': 59.359108571439464, 'heading': 188.24223547496402}
+2025-07-26 17:31:51,945 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:52,290 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:52,630 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:52,901 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88879145806898, 'longitude': -95.95785370848857, 'altitude': 966.4777626297084, 'speed': 60.15790987776121, 'heading': 188.0071320993155}
+2025-07-26 17:31:52,934 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:53,885 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:31:53,902 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88870081318721, 'longitude': -95.95782041955334, 'altitude': 966.4086127938187, 'speed': 60.130612952449866, 'heading': 187.33594507492}
+2025-07-26 17:31:54,565 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:54,904 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88866364787394, 'longitude': -95.95790927137475, 'altitude': 966.4976134079808, 'speed': 60.4214098884071, 'heading': 186.85061584424525}
+2025-07-26 17:31:55,370 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:55,905 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867609991806, 'longitude': -95.95782477589775, 'altitude': 967.1687970315933, 'speed': 60.45430091907697, 'heading': 187.59826167785786}
+2025-07-26 17:31:56,043 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:56,412 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:56,906 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867005095907, 'longitude': -95.95782089682046, 'altitude': 966.9641488136303, 'speed': 60.59146767950066, 'heading': 186.7379533581471}
+2025-07-26 17:31:56,961 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:57,158 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:57,807 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:57,907 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888718536420825, 'longitude': -95.95791040427392, 'altitude': 967.3432672599157, 'speed': 60.08724305526576, 'heading': 186.67591340098576}
+2025-07-26 17:31:58,639 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:58,909 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88880283995014, 'longitude': -95.9578144958873, 'altitude': 967.5689873552346, 'speed': 59.3664439944842, 'heading': 186.15641414466765}
+2025-07-26 17:31:59,518 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:59,879 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:31:59,910 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888764485449656, 'longitude': -95.95775377613376, 'altitude': 968.0085473694816, 'speed': 58.82029466358621, 'heading': 185.29628534642407}
+2025-07-26 17:32:00,157 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:00,911 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8887854347123, 'longitude': -95.95774820281002, 'altitude': 968.5668670924617, 'speed': 59.29750082688497, 'heading': 184.46749751348716}
+2025-07-26 17:32:01,115 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:01,808 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:01,913 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88885089429518, 'longitude': -95.95784347945322, 'altitude': 968.6575713004362, 'speed': 58.89802069413985, 'heading': 185.30302659606352}
+2025-07-26 17:32:02,118 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:02,234 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:02,914 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88889349964961, 'longitude': -95.95780884118979, 'altitude': 968.3610320001352, 'speed': 59.1698550157696, 'heading': 185.00168088291414}
+2025-07-26 17:32:03,179 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:03,639 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:03,915 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88890318203021, 'longitude': -95.95776904695954, 'altitude': 967.7918568097622, 'speed': 59.56403312283643, 'heading': 185.87037108463036}
+2025-07-26 17:32:04,419 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:04,775 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:04,917 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88896808930223, 'longitude': -95.95771723346498, 'altitude': 967.1585683894821, 'speed': 59.27074033878305, 'heading': 186.06158957381967}
+2025-07-26 17:32:05,108 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:05,570 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:05,918 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888956659335115, 'longitude': -95.95771321238652, 'altitude': 966.7181942628976, 'speed': 59.93595471940302, 'heading': 185.0744409392209}
+2025-07-26 17:32:06,018 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:06,450 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:06,920 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88898705056301, 'longitude': -95.95762701218703, 'altitude': 966.2554104545364, 'speed': 60.358863628158105, 'heading': 184.9031775759281}
+2025-07-26 17:32:07,121 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:07,921 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88904582950521, 'longitude': -95.9576008593929, 'altitude': 966.7873358812851, 'speed': 60.67805407746125, 'heading': 184.8335070682153}
+2025-07-26 17:32:07,998 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:08,255 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:08,801 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:08,922 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88898522018448, 'longitude': -95.95758809954313, 'altitude': 966.9505017673208, 'speed': 61.413549563678345, 'heading': 184.7821313839405}
+2025-07-26 17:32:09,498 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:09,924 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8890806203945, 'longitude': -95.95755337871961, 'altitude': 967.788820294936, 'speed': 62.33925967039672, 'heading': 185.58160316877317}
+2025-07-26 17:32:10,275 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:10,925 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889090926780405, 'longitude': -95.95761419834794, 'altitude': 967.7110389908642, 'speed': 62.098083879967604, 'heading': 184.60769493961737}
+2025-07-26 17:32:11,045 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:11,839 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:11,926 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88900089592867, 'longitude': -95.95752357603439, 'altitude': 968.6402768623836, 'speed': 61.51949423134516, 'heading': 183.83764972005562}
+2025-07-26 17:32:12,361 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:12,702 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:12,927 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888908655722254, 'longitude': -95.95759933181665, 'altitude': 967.8497485807792, 'speed': 61.563535187694775, 'heading': 184.4221417888469}
+2025-07-26 17:32:13,229 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:13,732 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:13,928 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88889025592493, 'longitude': -95.95767754249242, 'altitude': 967.3733321914532, 'speed': 60.97054080214104, 'heading': 185.05967836397565}
+2025-07-26 17:32:14,713 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:14,930 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88881523511932, 'longitude': -95.95769225864161, 'altitude': 967.7806711021734, 'speed': 60.687165885671384, 'heading': 185.05127140295068}
+2025-07-26 17:32:15,539 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:15,931 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88890121272736, 'longitude': -95.95767019351683, 'altitude': 968.241946890555, 'speed': 60.981199723410484, 'heading': 185.8767283767328}
+2025-07-26 17:32:15,962 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:16,330 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:16,770 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:16,932 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88880668024476, 'longitude': -95.9575776046261, 'altitude': 967.4055861403319, 'speed': 60.51747638466559, 'heading': 186.71143034537764}
+2025-07-26 17:32:17,344 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:17,934 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88875560202334, 'longitude': -95.95751288478588, 'altitude': 967.0223473566002, 'speed': 59.52098053877063, 'heading': 186.78589358594004}
+2025-07-26 17:32:17,990 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:18,485 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:18,936 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88876525724411, 'longitude': -95.95741772007072, 'altitude': 967.9675764778231, 'speed': 59.22804575889245, 'heading': 186.44410175632805}
+2025-07-26 17:32:19,361 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:19,577 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:19,936 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88879906233372, 'longitude': -95.95736354843638, 'altitude': 967.4373180462609, 'speed': 59.9006575356379, 'heading': 186.5080736529281}
+2025-07-26 17:32:20,278 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:20,937 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88875289254428, 'longitude': -95.95742887708373, 'altitude': 967.6834215960513, 'speed': 60.756407568856474, 'heading': 187.2349288448317}
+2025-07-26 17:32:21,233 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:21,667 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:21,938 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88880111374737, 'longitude': -95.95740200564175, 'altitude': 967.8090671549442, 'speed': 59.81616365760011, 'heading': 187.54551708465462}
+2025-07-26 17:32:22,146 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:22,562 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:22,939 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88873127227442, 'longitude': -95.95745036064342, 'altitude': 967.6348530349555, 'speed': 59.71873283437977, 'heading': 187.78888256251818}
+2025-07-26 17:32:23,180 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:23,791 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:23,940 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88881245069289, 'longitude': -95.9574505241045, 'altitude': 966.7122809935731, 'speed': 59.78878031920091, 'heading': 188.6085062557632}
+2025-07-26 17:32:23,977 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:24,650 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:24,941 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8887665513051, 'longitude': -95.95752259115456, 'altitude': 966.9664855078462, 'speed': 59.88293688939508, 'heading': 188.01630785813182}
+2025-07-26 17:32:25,033 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:25,589 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:25,943 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888723373772635, 'longitude': -95.95746141216208, 'altitude': 966.9096865458939, 'speed': 60.652894561140926, 'heading': 188.03480355300866}
+2025-07-26 17:32:26,053 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:26,771 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:26,945 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888720822899316, 'longitude': -95.95745268971619, 'altitude': 967.7211530737003, 'speed': 61.33212351193323, 'heading': 188.35920454130664}
+2025-07-26 17:32:27,456 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:27,870 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:27,945 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88871171682783, 'longitude': -95.95743157758208, 'altitude': 968.2426800967991, 'speed': 60.63902866248548, 'heading': 189.05625958784384}
+2025-07-26 17:32:28,733 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:28,946 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888658429990805, 'longitude': -95.95733710479136, 'altitude': 968.5333925591889, 'speed': 60.161419711128005, 'heading': 189.23774957835354}
+2025-07-26 17:32:29,317 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:29,527 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:29,949 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88857138287227, 'longitude': -95.95736188593241, 'altitude': 967.758337212815, 'speed': 60.61884229243017, 'heading': 188.59178267854784}
+2025-07-26 17:32:30,200 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:30,472 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:30,806 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:30,950 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8886611435005, 'longitude': -95.95727086184128, 'altitude': 967.2407438595123, 'speed': 60.87854089647484, 'heading': 187.9455329915747}
+2025-07-26 17:32:31,739 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:31,951 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88857241919183, 'longitude': -95.95724552383068, 'altitude': 966.4804349374457, 'speed': 60.99615416526901, 'heading': 188.08394391860674}
+2025-07-26 17:32:32,635 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:32,924 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:32,952 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88861088093428, 'longitude': -95.95717046809308, 'altitude': 965.8185867435793, 'speed': 61.7650483882527, 'heading': 188.06790013944382}
+2025-07-26 17:32:33,564 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:33,861 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:33,955 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888568160335815, 'longitude': -95.95712029586447, 'altitude': 966.3016415327526, 'speed': 62.68571523132721, 'heading': 187.12810586383142}
+2025-07-26 17:32:34,338 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:34,947 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:34,956 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88846875761371, 'longitude': -95.95702933054223, 'altitude': 966.3124694381319, 'speed': 63.24464732881238, 'heading': 187.4540631902233}
+2025-07-26 17:32:35,147 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:35,957 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888542706431885, 'longitude': -95.95709162267023, 'altitude': 966.5201424928429, 'speed': 62.47594065326159, 'heading': 186.66617102975823}
+2025-07-26 17:32:36,050 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:36,958 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8885958961812, 'longitude': -95.95718622690569, 'altitude': 965.8466758072462, 'speed': 62.4403758800298, 'heading': 187.35817051185225}
+2025-07-26 17:32:37,037 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:37,342 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:37,492 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:37,960 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888685791427044, 'longitude': -95.95726194475027, 'altitude': 965.4834830387823, 'speed': 62.55382416201584, 'heading': 186.59980902617374}
+2025-07-26 17:32:38,103 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:38,419 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:38,868 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:38,961 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88874026651325, 'longitude': -95.95729201087998, 'altitude': 966.4148088426226, 'speed': 62.61564811923663, 'heading': 187.24411421373227}
+2025-07-26 17:32:39,518 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:39,919 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:39,961 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888720320977995, 'longitude': -95.95725547245317, 'altitude': 966.314026993095, 'speed': 61.71019531495067, 'heading': 188.04719412565888}
+2025-07-26 17:32:40,649 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:40,962 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88863321363299, 'longitude': -95.95721022215643, 'altitude': 967.2042724122465, 'speed': 61.510182098416784, 'heading': 188.42417423157164}
+2025-07-26 17:32:41,214 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:41,692 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:41,964 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88858373791932, 'longitude': -95.95726704031155, 'altitude': 966.4915881857705, 'speed': 61.04696032997894, 'heading': 188.86076482066446}
+2025-07-26 17:32:42,586 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:42,965 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888577201691376, 'longitude': -95.95731381517759, 'altitude': 967.0023283510671, 'speed': 60.523510940499136, 'heading': 189.6444822692979}
+2025-07-26 17:32:43,507 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:43,966 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888500035088335, 'longitude': -95.95729243178064, 'altitude': 966.0348211959041, 'speed': 60.12522341013317, 'heading': 189.6730079096938}
+2025-07-26 17:32:44,087 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:44,686 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:44,968 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88853680667271, 'longitude': -95.9573348726677, 'altitude': 966.4005345229187, 'speed': 59.874626114554665, 'heading': 190.28586277490732}
+2025-07-26 17:32:45,165 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:45,969 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8884914024422, 'longitude': -95.9574198858442, 'altitude': 965.6184578066835, 'speed': 59.78720059675853, 'heading': 189.57175927083702}
+2025-07-26 17:32:46,102 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:46,314 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:46,779 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:46,970 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88847086169891, 'longitude': -95.95742626702514, 'altitude': 965.2887096343809, 'speed': 59.98022656157097, 'heading': 188.8030879471576}
+2025-07-26 17:32:47,462 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:47,971 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888541433236796, 'longitude': -95.9574090084072, 'altitude': 964.4069744077506, 'speed': 60.66727937000326, 'heading': 187.95281733441902}
+2025-07-26 17:32:48,096 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:48,561 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:48,972 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88864135180047, 'longitude': -95.95746899229096, 'altitude': 963.41647062055, 'speed': 61.39434703519809, 'heading': 187.90208273932885}
+2025-07-26 17:32:49,322 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:49,973 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8886804017603, 'longitude': -95.95743608693216, 'altitude': 964.0078495236622, 'speed': 60.42683639036542, 'heading': 188.62020373839582}
+2025-07-26 17:32:50,137 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:50,527 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:50,974 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88870534304578, 'longitude': -95.95743492626504, 'altitude': 963.5541045841431, 'speed': 59.61997151145894, 'heading': 188.99518302995}
+2025-07-26 17:32:51,221 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:51,540 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:51,976 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867482285219, 'longitude': -95.95748508594338, 'altitude': 962.9461274277637, 'speed': 59.80961473327645, 'heading': 188.15712536804227}
+2025-07-26 17:32:52,286 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:52,550 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:52,979 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888772141376, 'longitude': -95.95740854093536, 'altitude': 962.2971503618265, 'speed': 59.895577120249825, 'heading': 187.99743116270986}
+2025-07-26 17:32:53,111 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:53,980 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888826175238954, 'longitude': -95.9573247618374, 'altitude': 961.8157594104825, 'speed': 60.38615028040295, 'heading': 188.83351968499477}
+2025-07-26 17:32:54,030 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:54,856 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:54,981 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88883218095439, 'longitude': -95.95738793769729, 'altitude': 960.8343116652385, 'speed': 59.62151807268828, 'heading': 188.53690111211063}
+2025-07-26 17:32:55,720 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:55,983 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888902127704156, 'longitude': -95.95735935712051, 'altitude': 959.9461170333906, 'speed': 59.624384198319575, 'heading': 189.00215029085285}
+2025-07-26 17:32:56,097 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:56,686 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:56,984 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888873360452415, 'longitude': -95.9573193733361, 'altitude': 959.6234384291223, 'speed': 60.57349835400989, 'heading': 188.08394729467045}
+2025-07-26 17:32:57,003 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:57,865 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:57,985 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88877449252436, 'longitude': -95.95725552526275, 'altitude': 959.562050649225, 'speed': 59.68203757963567, 'heading': 188.88479786475324}
+2025-07-26 17:32:58,865 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:32:58,988 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88872990056161, 'longitude': -95.95716808018798, 'altitude': 960.0402701574079, 'speed': 59.768575389903916, 'heading': 189.03556227024228}
+2025-07-26 17:32:59,518 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:59,980 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:32:59,989 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88874201585522, 'longitude': -95.95722196217427, 'altitude': 959.0910330896186, 'speed': 58.8809461138202, 'heading': 188.62446870755778}
+2025-07-26 17:33:00,572 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:00,990 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88870140210266, 'longitude': -95.95729372406663, 'altitude': 959.154680895223, 'speed': 58.6475986697836, 'heading': 189.19615610770458}
+2025-07-26 17:33:01,236 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:01,991 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888764355428606, 'longitude': -95.95724336012758, 'altitude': 959.8768213475449, 'speed': 58.406138905393355, 'heading': 188.90335097828554}
+2025-07-26 17:33:02,183 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:02,922 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:02,992 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888859997779086, 'longitude': -95.95720044983487, 'altitude': 960.1727668697804, 'speed': 57.43741067729061, 'heading': 187.99728025829882}
+2025-07-26 17:33:03,838 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:03,966 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:03,993 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88883920718024, 'longitude': -95.9571190049322, 'altitude': 959.2842198975551, 'speed': 57.518876728028104, 'heading': 187.2462639771271}
+2025-07-26 17:33:04,306 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:04,995 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8888689553635, 'longitude': -95.95709467453774, 'altitude': 960.0614658434636, 'speed': 57.015503724252014, 'heading': 188.06289453477706}
+2025-07-26 17:33:05,145 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:05,829 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:05,988 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:05,996 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8888994308361, 'longitude': -95.95713670420324, 'altitude': 960.3989248176969, 'speed': 57.212319865422614, 'heading': 187.07025527236667}
+2025-07-26 17:33:06,362 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:06,997 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88898685461255, 'longitude': -95.95707852129709, 'altitude': 959.9851507300349, 'speed': 57.645872269773804, 'heading': 186.54991936064542}
+2025-07-26 17:33:07,183 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:07,892 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:07,998 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88897499981166, 'longitude': -95.95712562870024, 'altitude': 959.8949488998167, 'speed': 57.0137058401515, 'heading': 185.76150729102895}
+2025-07-26 17:33:08,303 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:08,622 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:08,745 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:08,999 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88905897141463, 'longitude': -95.95718438878993, 'altitude': 959.5928115818224, 'speed': 56.832049511670945, 'heading': 185.90116575159615}
+2025-07-26 17:33:09,261 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:09,813 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:10,001 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88910655332548, 'longitude': -95.95724039225513, 'altitude': 959.5128558835555, 'speed': 57.06221454913124, 'heading': 185.0307126033614}
+2025-07-26 17:33:10,765 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:11,002 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889151428407736, 'longitude': -95.95725867184355, 'altitude': 958.9971322393515, 'speed': 56.47899301969665, 'heading': 184.44245306936534}
+2025-07-26 17:33:11,446 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:11,992 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:12,003 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889200556176235, 'longitude': -95.95727901229938, 'altitude': 958.0257927998234, 'speed': 55.526025786614866, 'heading': 184.0576332310371}
+2025-07-26 17:33:12,994 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:13,006 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8892431970839, 'longitude': -95.9573717318414, 'altitude': 957.2233499166333, 'speed': 54.95434909581554, 'heading': 184.3705776170079}
+2025-07-26 17:33:13,972 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:14,007 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88921900708793, 'longitude': -95.95738231324813, 'altitude': 956.2867955434014, 'speed': 54.83177791511892, 'heading': 184.64674379899543}
+2025-07-26 17:33:14,414 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:14,862 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:15,008 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88915516216731, 'longitude': -95.95736176946757, 'altitude': 955.9981635465733, 'speed': 55.65679047580639, 'heading': 184.61590490136032}
+2025-07-26 17:33:15,122 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:16,009 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88923485507077, 'longitude': -95.95738519552097, 'altitude': 956.1524633910874, 'speed': 54.814933576227915, 'heading': 184.08388089159166}
+2025-07-26 17:33:16,065 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:16,220 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:16,406 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:16,989 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:17,010 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889235339779965, 'longitude': -95.95741720408208, 'altitude': 957.1265717637575, 'speed': 54.24081354616088, 'heading': 183.27518027652658}
+2025-07-26 17:33:17,131 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:18,011 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88932815221911, 'longitude': -95.95740791317884, 'altitude': 956.7603915945655, 'speed': 54.81188952150845, 'heading': 184.20313442144092}
+2025-07-26 17:33:18,094 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:18,607 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:19,020 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88928345858089, 'longitude': -95.95734285104464, 'altitude': 957.691044512435, 'speed': 55.13794101224943, 'heading': 183.90881177121213}
+2025-07-26 17:33:19,523 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:19,988 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:20,021 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88933517638743, 'longitude': -95.95736710644387, 'altitude': 957.8955104567734, 'speed': 55.882912862262366, 'heading': 183.7020736990353}
+2025-07-26 17:33:20,179 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:21,022 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88934333064278, 'longitude': -95.95742777514386, 'altitude': 958.3227055748933, 'speed': 55.00840130104114, 'heading': 184.01462089294668}
+2025-07-26 17:33:21,164 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:21,638 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:22,023 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88935821774866, 'longitude': -95.95743190167323, 'altitude': 957.7741912075554, 'speed': 54.31798900915975, 'heading': 184.8400345041967}
+2025-07-26 17:33:22,602 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:22,776 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:23,024 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889280019644005, 'longitude': -95.95733601368214, 'altitude': 957.6777267453714, 'speed': 54.787786160642014, 'heading': 185.15697369390617}
+2025-07-26 17:33:23,142 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:23,899 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:24,025 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88919383618338, 'longitude': -95.95730507451775, 'altitude': 957.7150643429499, 'speed': 54.79592802044085, 'heading': 185.7338851191835}
+2025-07-26 17:33:24,757 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:25,026 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88912518757919, 'longitude': -95.95725623930558, 'altitude': 958.2315674395747, 'speed': 54.071457174935404, 'heading': 184.8942958939277}
+2025-07-26 17:33:25,345 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:26,022 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:26,027 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8890643074137, 'longitude': -95.95728940675944, 'altitude': 957.6020751374881, 'speed': 54.218769794441435, 'heading': 184.9339627925768}
+2025-07-26 17:33:26,214 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:26,911 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:27,028 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88909970611636, 'longitude': -95.9571989545222, 'altitude': 958.422107416533, 'speed': 55.04073349984974, 'heading': 184.27579698369385}
+2025-07-26 17:33:27,808 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:28,029 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889013578987125, 'longitude': -95.95716016215317, 'altitude': 957.5669258894387, 'speed': 54.204144487474125, 'heading': 183.9986179429824}
+2025-07-26 17:33:28,748 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:29,028 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:29,032 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88911146609416, 'longitude': -95.95724031833869, 'altitude': 956.5702887392811, 'speed': 54.72172270387333, 'heading': 183.48223401862015}
+2025-07-26 17:33:29,712 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:30,033 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88920055669965, 'longitude': -95.95733921695016, 'altitude': 955.908388613491, 'speed': 54.615854925806545, 'heading': 183.12537182837093}
+2025-07-26 17:33:30,278 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:31,030 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:31,036 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88927837810264, 'longitude': -95.95733046815647, 'altitude': 956.6893116133394, 'speed': 54.13855104794699, 'heading': 183.3770284512371}
+2025-07-26 17:33:31,229 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:32,037 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889194685458, 'longitude': -95.95732613534675, 'altitude': 957.0507505885564, 'speed': 53.66161895046794, 'heading': 183.45303857667648}
+2025-07-26 17:33:32,193 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:33,030 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:33,038 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8891699802669, 'longitude': -95.9574243587489, 'altitude': 956.8681909873942, 'speed': 53.66742633570484, 'heading': 183.24523161076004}
+2025-07-26 17:33:33,800 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:34,003 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:34,041 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889137225714265, 'longitude': -95.95749393618144, 'altitude': 957.6252204970991, 'speed': 54.14932231525053, 'heading': 183.2603697819948}
+2025-07-26 17:33:34,133 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:35,044 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88906876612463, 'longitude': -95.95749509685542, 'altitude': 956.7262715273876, 'speed': 53.77931279012291, 'heading': 182.73379784792374}
+2025-07-26 17:33:35,068 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:35,874 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:36,045 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8889932045271, 'longitude': -95.95750170515431, 'altitude': 955.9694785897389, 'speed': 52.98334938416862, 'heading': 182.8746203237099}
+2025-07-26 17:33:36,255 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:37,046 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88895347516281, 'longitude': -95.95758366331005, 'altitude': 956.1936614918313, 'speed': 52.04221836422248, 'heading': 183.72877243630083}
+2025-07-26 17:33:37,138 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:38,048 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8889564383755, 'longitude': -95.95751596397729, 'altitude': 956.429670908657, 'speed': 52.43701622513179, 'heading': 184.0841175704108}
+2025-07-26 17:33:38,121 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:38,774 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:39,033 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:39,049 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88903142191222, 'longitude': -95.95749731983689, 'altitude': 957.3870432382172, 'speed': 53.03157574291544, 'heading': 183.87140412048618}
+2025-07-26 17:33:39,879 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:40,050 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889083231480704, 'longitude': -95.9575623981151, 'altitude': 956.8146595238691, 'speed': 52.67897908759138, 'heading': 184.09461825257242}
+2025-07-26 17:33:40,419 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:41,053 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88918182303573, 'longitude': -95.95755400021955, 'altitude': 957.5850129317254, 'speed': 52.94190621304444, 'heading': 183.37704703419266}
+2025-07-26 17:33:41,404 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:41,884 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:42,054 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8892163312436, 'longitude': -95.95762883257665, 'altitude': 956.7332946809302, 'speed': 53.50708020815642, 'heading': 183.04653512226432}
+2025-07-26 17:33:42,743 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:42,956 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:43,056 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889293302372536, 'longitude': -95.95766410636502, 'altitude': 955.9909640726121, 'speed': 53.19550375936397, 'heading': 182.13355741568182}
+2025-07-26 17:33:43,945 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:44,057 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889370329553884, 'longitude': -95.95766878107784, 'altitude': 955.4605163231498, 'speed': 52.23832880518165, 'heading': 181.4725580987113}
+2025-07-26 17:33:44,321 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:44,458 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:45,058 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88946015008557, 'longitude': -95.95768149009835, 'altitude': 954.9693095514574, 'speed': 53.195824574553946, 'heading': 180.7972544365163}
+2025-07-26 17:33:45,359 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:46,059 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88949395727429, 'longitude': -95.95777041841073, 'altitude': 954.1459243589626, 'speed': 53.17990436972692, 'heading': 180.9046420186066}
+2025-07-26 17:33:46,237 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:46,709 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:47,061 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88958549170241, 'longitude': -95.95768106294962, 'altitude': 953.9550982430678, 'speed': 54.11323200638676, 'heading': 181.67039557681602}
+2025-07-26 17:33:47,277 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:47,942 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:48,062 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88951165827384, 'longitude': -95.95761151938896, 'altitude': 954.7563656149465, 'speed': 54.00121876500886, 'heading': 182.22415432684423}
+2025-07-26 17:33:48,130 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:48,695 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:48,852 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:49,063 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88956108847456, 'longitude': -95.95768558764344, 'altitude': 954.0505746235833, 'speed': 54.3088380877961, 'heading': 182.87390760617012}
+2025-07-26 17:33:49,265 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:49,666 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:49,915 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:50,064 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88956275076798, 'longitude': -95.95765663530332, 'altitude': 953.772034313901, 'speed': 53.71592548356965, 'heading': 181.97305787197038}
+2025-07-26 17:33:50,803 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:51,065 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889480542341815, 'longitude': -95.95758863796812, 'altitude': 954.1306216298377, 'speed': 53.263328793090984, 'heading': 182.81270591681428}
+2025-07-26 17:33:51,598 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:52,066 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889418463796474, 'longitude': -95.95754489491408, 'altitude': 954.7548268553005, 'speed': 53.71792616895965, 'heading': 183.76326516086897}
+2025-07-26 17:33:52,516 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:53,067 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889422651505186, 'longitude': -95.95753988780643, 'altitude': 955.5111059544413, 'speed': 53.59251551355069, 'heading': 183.9614704755434}
+2025-07-26 17:33:53,108 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:53,671 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:54,069 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88949309795916, 'longitude': -95.95760084346402, 'altitude': 955.4229252161244, 'speed': 52.821950731260735, 'heading': 183.0466200437387}
+2025-07-26 17:33:54,481 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:55,069 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889399777960065, 'longitude': -95.95769690409932, 'altitude': 954.8272495533425, 'speed': 52.74006312847164, 'heading': 183.80732809077}
+2025-07-26 17:33:55,281 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:55,860 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:56,070 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889451920595604, 'longitude': -95.95777867603721, 'altitude': 955.6724773082655, 'speed': 53.33745582362893, 'heading': 184.32927272856335}
+2025-07-26 17:33:56,393 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:56,508 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:57,071 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88936111530081, 'longitude': -95.95787209102065, 'altitude': 956.5087100534198, 'speed': 53.664653567074815, 'heading': 185.04298674931775}
+2025-07-26 17:33:57,128 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:57,340 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:57,974 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:33:58,073 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88932526897834, 'longitude': -95.95784721067304, 'altitude': 955.8199449071508, 'speed': 52.67875359897642, 'heading': 184.11336894490307}
+2025-07-26 17:33:58,440 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:59,075 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889384961175686, 'longitude': -95.95787280398564, 'altitude': 955.2167646011079, 'speed': 52.753560192960926, 'heading': 184.15576623024185}
+2025-07-26 17:33:59,217 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:59,414 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:59,591 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:33:59,791 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:00,076 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889325058304564, 'longitude': -95.95788055958667, 'altitude': 955.6908299429359, 'speed': 53.43774354504935, 'heading': 183.98286853712895}
+2025-07-26 17:34:00,488 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:01,077 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88928281969421, 'longitude': -95.95792596851359, 'altitude': 955.2077437494813, 'speed': 52.92704421363395, 'heading': 184.83637296754785}
+2025-07-26 17:34:01,337 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:02,043 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:02,078 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88936153111849, 'longitude': -95.95789250344592, 'altitude': 955.3091339326394, 'speed': 53.20369044405121, 'heading': 184.38045097105262}
+2025-07-26 17:34:02,964 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:03,081 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889391431742894, 'longitude': -95.95797699046453, 'altitude': 956.2701154812911, 'speed': 52.92033275561123, 'heading': 184.1953655655751}
+2025-07-26 17:34:03,683 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:04,082 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88930522534915, 'longitude': -95.95805526531619, 'altitude': 957.149794962347, 'speed': 51.94481611332659, 'heading': 184.70276947237386}
+2025-07-26 17:34:04,428 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:05,083 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88937118064299, 'longitude': -95.95811155317054, 'altitude': 957.6293874887675, 'speed': 51.8390985262889, 'heading': 184.36344501865517}
+2025-07-26 17:34:05,310 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:05,528 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:05,701 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:06,077 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:06,085 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889382717425526, 'longitude': -95.95802655550224, 'altitude': 958.174093870555, 'speed': 51.81110259488808, 'heading': 183.60815914853583}
+2025-07-26 17:34:07,018 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:07,086 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88937993441355, 'longitude': -95.95804408301618, 'altitude': 957.7592519491262, 'speed': 51.29743975147483, 'heading': 183.41399144008122}
+2025-07-26 17:34:07,889 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:08,088 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88938788442911, 'longitude': -95.957965584922, 'altitude': 956.8780194558569, 'speed': 51.40274018910785, 'heading': 183.87808532722516}
+2025-07-26 17:34:08,697 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:09,089 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88937494382275, 'longitude': -95.95788108642788, 'altitude': 956.0802615839418, 'speed': 51.99538059115155, 'heading': 184.29286656279115}
+2025-07-26 17:34:09,235 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:09,609 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:09,753 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:10,090 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88936776563055, 'longitude': -95.95794411210818, 'altitude': 956.3584192021721, 'speed': 51.27388818547013, 'heading': 183.44857386545732}
+2025-07-26 17:34:10,726 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:11,092 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88929137013482, 'longitude': -95.95788693963956, 'altitude': 955.9238916134677, 'speed': 51.05382038280938, 'heading': 182.53476830629143}
+2025-07-26 17:34:11,614 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:11,720 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:12,093 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88926756819544, 'longitude': -95.95780114353043, 'altitude': 956.6166532670356, 'speed': 50.123904064115784, 'heading': 182.7983844905812}
+2025-07-26 17:34:12,389 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:12,630 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:13,094 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889171706918766, 'longitude': -95.95785374368728, 'altitude': 955.628877894232, 'speed': 49.58555494880755, 'heading': 183.3382040700429}
+2025-07-26 17:34:13,094 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:13,405 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:13,842 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:14,049 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:14,095 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889139280972245, 'longitude': -95.95794592826662, 'altitude': 955.8661626883845, 'speed': 50.5771277441943, 'heading': 184.0378217448648}
+2025-07-26 17:34:15,029 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:15,098 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88918593834309, 'longitude': -95.95796513112955, 'altitude': 955.2569711739748, 'speed': 51.45052805246003, 'heading': 184.03108781007936}
+2025-07-26 17:34:15,614 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:15,812 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:16,099 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88918353624449, 'longitude': -95.95787745760727, 'altitude': 955.3416148835094, 'speed': 51.911659641472205, 'heading': 184.47105796606397}
+2025-07-26 17:34:16,531 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:17,101 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889127969783246, 'longitude': -95.95784168524027, 'altitude': 955.2587598204254, 'speed': 50.94384964158852, 'heading': 184.68902104314267}
+2025-07-26 17:34:17,300 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:17,414 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:17,973 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:18,103 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88908600576713, 'longitude': -95.9577583330206, 'altitude': 954.2675700764598, 'speed': 51.23632696310105, 'heading': 184.09006254676441}
+2025-07-26 17:34:18,639 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:19,104 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88912145538577, 'longitude': -95.95782345487423, 'altitude': 953.371488036528, 'speed': 50.64863647104847, 'heading': 184.06296362539857}
+2025-07-26 17:34:19,177 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:19,945 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:20,107 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8890356242179, 'longitude': -95.95786781362203, 'altitude': 952.7209621490853, 'speed': 50.42279679360599, 'heading': 184.9938441831227}
+2025-07-26 17:34:20,333 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:20,474 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:20,976 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:21,108 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88898025673024, 'longitude': -95.95785765091223, 'altitude': 953.0604423896947, 'speed': 49.543196645193035, 'heading': 185.55284644424805}
+2025-07-26 17:34:21,138 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:21,468 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:22,044 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:22,109 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88907848517133, 'longitude': -95.95783039362085, 'altitude': 953.5927761825981, 'speed': 50.04472742206602, 'heading': 185.13020697815614}
+2025-07-26 17:34:22,434 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:23,110 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889153073417255, 'longitude': -95.95787622620036, 'altitude': 952.7893329320235, 'speed': 49.23606666840079, 'heading': 185.52226243282166}
+2025-07-26 17:34:23,313 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:23,540 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:24,111 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88920016800422, 'longitude': -95.95780728493881, 'altitude': 953.7680175084158, 'speed': 50.22718711660175, 'heading': 184.98960288525888}
+2025-07-26 17:34:24,259 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:24,950 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:25,112 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88912441571512, 'longitude': -95.957773350197, 'altitude': 954.2004109608415, 'speed': 50.660004138653726, 'heading': 185.51393842221464}
+2025-07-26 17:34:25,120 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:25,600 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:25,823 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:26,061 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:26,113 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88908579290131, 'longitude': -95.9577357851954, 'altitude': 954.4795947419454, 'speed': 50.155791082678476, 'heading': 186.40880853305833}
+2025-07-26 17:34:26,767 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:27,114 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889000974788644, 'longitude': -95.95776282377035, 'altitude': 953.9859825703871, 'speed': 49.33597417138087, 'heading': 187.00982988834946}
+2025-07-26 17:34:27,274 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:27,711 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:28,045 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:28,115 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888908139967384, 'longitude': -95.95772246669475, 'altitude': 953.5686509818745, 'speed': 49.72792758953872, 'heading': 187.8259268932109}
+2025-07-26 17:34:28,488 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:28,780 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:29,117 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88897746941524, 'longitude': -95.95781809904152, 'altitude': 952.8506135778446, 'speed': 50.71987972974715, 'heading': 188.34732886520783}
+2025-07-26 17:34:29,475 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:30,047 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:30,119 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88893197188851, 'longitude': -95.95777348079767, 'altitude': 952.1664326617921, 'speed': 50.34452323855473, 'heading': 188.51902055615597}
+2025-07-26 17:34:30,430 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:30,758 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:31,121 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88898833943952, 'longitude': -95.95775531308648, 'altitude': 951.198499885888, 'speed': 50.74530214875447, 'heading': 188.75229493623738}
+2025-07-26 17:34:31,515 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:32,059 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:32,122 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88902033445052, 'longitude': -95.9577074726794, 'altitude': 950.2131490179926, 'speed': 49.89629496687001, 'heading': 189.41646852992346}
+2025-07-26 17:34:32,234 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:33,124 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8890557499442, 'longitude': -95.9577562335494, 'altitude': 951.0660535208752, 'speed': 50.50289100206785, 'heading': 189.848894461088}
+2025-07-26 17:34:33,129 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:33,872 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:34,125 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889102129347435, 'longitude': -95.95771869644327, 'altitude': 951.5373791880498, 'speed': 50.843674286702075, 'heading': 189.89119578879854}
+2025-07-26 17:34:34,835 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:35,126 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88900328485872, 'longitude': -95.95766012887071, 'altitude': 952.3905462920135, 'speed': 50.80323072682684, 'heading': 190.76023850080333}
+2025-07-26 17:34:35,186 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:35,930 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:36,127 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88903585090795, 'longitude': -95.9576819307945, 'altitude': 952.7034024760403, 'speed': 50.360362532756234, 'heading': 190.53090347918192}
+2025-07-26 17:34:36,759 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:36,888 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:37,130 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889038003315264, 'longitude': -95.95770847411988, 'altitude': 953.5203184724911, 'speed': 50.131869713122306, 'heading': 190.98287104010723}
+2025-07-26 17:34:37,832 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:38,131 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.889076360954434, 'longitude': -95.95778368600902, 'altitude': 953.4830620280319, 'speed': 49.28170654380724, 'heading': 191.77086092741376}
+2025-07-26 17:34:38,469 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:39,133 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88901767122223, 'longitude': -95.95772027618187, 'altitude': 953.7338853391441, 'speed': 50.1976916140442, 'heading': 191.80147362899746}
+2025-07-26 17:34:39,171 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:39,368 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:39,679 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:40,135 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88896790358256, 'longitude': -95.95770132639842, 'altitude': 954.4779180491395, 'speed': 50.99195754372072, 'heading': 192.41666535967968}
+2025-07-26 17:34:40,184 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:41,116 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:41,137 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888918510053884, 'longitude': -95.95764221035478, 'altitude': 954.0280034502129, 'speed': 50.526876267761764, 'heading': 191.92435237921}
+2025-07-26 17:34:41,664 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:42,139 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888937654711455, 'longitude': -95.95773427936929, 'altitude': 954.5102953662304, 'speed': 50.16234845217653, 'heading': 192.18108007566798}
+2025-07-26 17:34:42,398 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:42,534 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:43,140 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88900662430154, 'longitude': -95.95765112973717, 'altitude': 953.7518012640169, 'speed': 50.18892954544526, 'heading': 193.0676577458654}
+2025-07-26 17:34:43,386 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:44,141 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8890090191346, 'longitude': -95.95772553908311, 'altitude': 953.587460666745, 'speed': 50.92591460056561, 'heading': 193.11903502510054}
+2025-07-26 17:34:44,298 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:44,680 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:45,142 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88895317568052, 'longitude': -95.9576449427669, 'altitude': 954.0134771532661, 'speed': 51.026257755281264, 'heading': 192.59582335736872}
+2025-07-26 17:34:45,144 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:45,721 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:46,064 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:46,143 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88894688598348, 'longitude': -95.9577385620429, 'altitude': 953.9540857214201, 'speed': 51.65343843853565, 'heading': 192.22555029988274}
+2025-07-26 17:34:46,483 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:47,144 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88891555241204, 'longitude': -95.95778007837325, 'altitude': 954.3696518002619, 'speed': 52.276536140604044, 'heading': 192.11206900970458}
+2025-07-26 17:34:47,304 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:47,831 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:48,146 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88888178337962, 'longitude': -95.95778881922863, 'altitude': 955.0379427093941, 'speed': 51.732549780635196, 'heading': 192.24913184389933}
+2025-07-26 17:34:48,207 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:48,971 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:49,147 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88888555988694, 'longitude': -95.95769186072063, 'altitude': 954.7836760859495, 'speed': 52.28997783971206, 'heading': 192.16528199511188}
+2025-07-26 17:34:49,859 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:50,148 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88885244871808, 'longitude': -95.95768497188195, 'altitude': 955.6214614572428, 'speed': 51.60381589741796, 'heading': 191.8224378069421}
+2025-07-26 17:34:50,807 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:51,079 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:51,150 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888892352105245, 'longitude': -95.9575918601884, 'altitude': 955.0164874670694, 'speed': 50.92213478865606, 'heading': 192.13396538317903}
+2025-07-26 17:34:51,189 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:51,894 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:52,152 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8888594349189, 'longitude': -95.95757055481477, 'altitude': 954.4155360765315, 'speed': 51.75246347332344, 'heading': 191.33379997719285}
+2025-07-26 17:34:52,513 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:52,665 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:53,154 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88888966771803, 'longitude': -95.95747350007943, 'altitude': 953.8454637010542, 'speed': 51.6993990516368, 'heading': 192.01182888240132}
+2025-07-26 17:34:53,260 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:53,919 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:54,155 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88891636514596, 'longitude': -95.9574094531358, 'altitude': 954.2810498685872, 'speed': 52.35294879039967, 'heading': 192.64870672574145}
+2025-07-26 17:34:54,432 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:54,560 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:55,156 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88882019487793, 'longitude': -95.95736967517128, 'altitude': 953.920344027798, 'speed': 52.978542253775366, 'heading': 193.57574700070822}
+2025-07-26 17:34:55,506 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:55,913 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:56,152 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:56,157 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888904687738545, 'longitude': -95.95729068853065, 'altitude': 953.2731007065978, 'speed': 52.635282141030245, 'heading': 193.50726566509977}
+2025-07-26 17:34:56,695 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:57,158 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88882488120351, 'longitude': -95.95729781136889, 'altitude': 954.1926047256551, 'speed': 52.7777662145108, 'heading': 193.88833467097695}
+2025-07-26 17:34:57,179 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:58,060 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:34:58,159 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888808096731914, 'longitude': -95.9573396275967, 'altitude': 953.9155106747144, 'speed': 52.982712878364204, 'heading': 192.92469676762664}
+2025-07-26 17:34:58,873 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:34:59,161 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888804498917175, 'longitude': -95.95723999353606, 'altitude': 954.3852903135311, 'speed': 52.18878827415638, 'heading': 193.89534230039354}
+2025-07-26 17:34:59,436 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:00,027 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:00,162 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88871536482587, 'longitude': -95.95716083844495, 'altitude': 954.9245372051737, 'speed': 51.628059650610965, 'heading': 193.5765120157754}
+2025-07-26 17:35:00,629 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:01,163 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888663722431176, 'longitude': -95.95724981806491, 'altitude': 954.4269473650955, 'speed': 51.15108804600499, 'heading': 193.5256048945319}
+2025-07-26 17:35:01,323 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:01,845 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:02,164 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88864635231865, 'longitude': -95.95717770309065, 'altitude': 953.4331392812992, 'speed': 51.10436970734492, 'heading': 194.17867813140353}
+2025-07-26 17:35:02,216 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:02,998 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:03,166 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88871260559038, 'longitude': -95.95725799183944, 'altitude': 952.8557666687581, 'speed': 50.793151565833014, 'heading': 193.78342239773957}
+2025-07-26 17:35:03,443 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:04,167 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88871832120142, 'longitude': -95.95731659694371, 'altitude': 952.7720064795, 'speed': 49.96432396050346, 'heading': 194.75654430308109}
+2025-07-26 17:35:04,168 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:04,580 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:05,169 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888742671056136, 'longitude': -95.95723413261476, 'altitude': 953.614565460011, 'speed': 49.27034720692174, 'heading': 194.32934089180245}
+2025-07-26 17:35:05,329 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:05,842 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:06,170 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867486097881, 'longitude': -95.95728475283786, 'altitude': 952.9609406851832, 'speed': 50.21357514788656, 'heading': 194.624790327084}
+2025-07-26 17:35:06,173 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:06,814 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:07,172 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88859627760365, 'longitude': -95.95720803454135, 'altitude': 953.3144138748978, 'speed': 51.087522751302735, 'heading': 195.44493170952404}
+2025-07-26 17:35:07,237 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:08,147 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:08,173 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88851015068043, 'longitude': -95.95729830064926, 'altitude': 952.8897148620117, 'speed': 51.989733349432036, 'heading': 196.40387119632794}
+2025-07-26 17:35:09,018 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:09,174 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88850552652703, 'longitude': -95.95720307208352, 'altitude': 952.615203570553, 'speed': 52.09863704693206, 'heading': 195.71799573349648}
+2025-07-26 17:35:09,238 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:09,420 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:10,168 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:10,175 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88856570924606, 'longitude': -95.95724968574874, 'altitude': 952.6594120460845, 'speed': 52.07977946909231, 'heading': 195.97844559726948}
+2025-07-26 17:35:10,684 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:10,949 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:11,176 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888519534431126, 'longitude': -95.9571616003852, 'altitude': 951.8376851446575, 'speed': 51.35553291769941, 'heading': 195.44540424581405}
+2025-07-26 17:35:11,469 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:12,177 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88846581165027, 'longitude': -95.95715901449427, 'altitude': 951.6046247177585, 'speed': 51.16454988494164, 'heading': 195.61487405257262}
+2025-07-26 17:35:12,394 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:13,179 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88845302488409, 'longitude': -95.95713212326561, 'altitude': 950.7225953924396, 'speed': 51.39079189459387, 'heading': 196.59384223519544}
+2025-07-26 17:35:13,359 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:13,938 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:14,180 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88843777243391, 'longitude': -95.95707072463297, 'altitude': 949.9893468796963, 'speed': 51.840813688102905, 'heading': 196.60659359316648}
+2025-07-26 17:35:14,183 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:14,747 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:15,110 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:15,181 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88842222358411, 'longitude': -95.95702705356952, 'altitude': 949.4365691244064, 'speed': 52.300089175942375, 'heading': 196.96017854081288}
+2025-07-26 17:35:15,261 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:16,012 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:16,182 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888506889597906, 'longitude': -95.95700812003953, 'altitude': 948.4860292323326, 'speed': 51.36684719300778, 'heading': 196.21401824118902}
+2025-07-26 17:35:16,455 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:17,183 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88857840694874, 'longitude': -95.95698314382685, 'altitude': 948.3457150467126, 'speed': 51.76398452555823, 'heading': 195.3996789108263}
+2025-07-26 17:35:17,343 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:18,000 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:18,185 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888493661685445, 'longitude': -95.95705021592657, 'altitude': 947.6384137358888, 'speed': 51.33240314885434, 'heading': 195.3553819410867}
+2025-07-26 17:35:18,961 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:19,186 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88846770324146, 'longitude': -95.95696632270673, 'altitude': 946.8250462220642, 'speed': 51.00180640362591, 'heading': 196.34402837613965}
+2025-07-26 17:35:19,325 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:20,187 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88855165400666, 'longitude': -95.95697756480945, 'altitude': 946.3974901320566, 'speed': 51.234446366171554, 'heading': 197.2336933827451}
+2025-07-26 17:35:20,274 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:20,644 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:21,188 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888543485466435, 'longitude': -95.95703495367657, 'altitude': 946.6963863144817, 'speed': 51.1589468431693, 'heading': 197.14736561170184}
+2025-07-26 17:35:21,244 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:21,576 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:22,121 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:22,190 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88852198111848, 'longitude': -95.95696506162068, 'altitude': 946.3618842064468, 'speed': 51.352304277710346, 'heading': 197.63157205394103}
+2025-07-26 17:35:22,321 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:22,656 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:22,910 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:23,192 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88860307250948, 'longitude': -95.95702354206755, 'altitude': 945.4329666568237, 'speed': 50.375018732222316, 'heading': 198.38901837475802}
+2025-07-26 17:35:23,579 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:24,078 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:24,193 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88863598408114, 'longitude': -95.95706931304714, 'altitude': 946.1004319927498, 'speed': 50.46250329403519, 'heading': 199.046570512956}
+2025-07-26 17:35:24,886 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:25,194 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88870679219152, 'longitude': -95.95701705493533, 'altitude': 945.3278684722634, 'speed': 51.24645586097023, 'heading': 199.62613492157527}
+2025-07-26 17:35:25,477 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:26,094 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:26,195 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867362732778, 'longitude': -95.95710350342729, 'altitude': 946.1006654377402, 'speed': 51.05273545160595, 'heading': 199.68205052120794}
+2025-07-26 17:35:26,991 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:27,196 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88876260294852, 'longitude': -95.9571672760812, 'altitude': 945.113385156239, 'speed': 50.80740225987923, 'heading': 200.11397068217477}
+2025-07-26 17:35:27,575 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:28,197 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8886725647916, 'longitude': -95.95722437372056, 'altitude': 945.4903944741402, 'speed': 51.01090202602035, 'heading': 200.12110193417703}
+2025-07-26 17:35:28,413 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:29,199 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88873360909014, 'longitude': -95.95713606487985, 'altitude': 944.9949626397344, 'speed': 50.03430079910777, 'heading': 199.79937929968992}
+2025-07-26 17:35:29,333 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:29,463 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:30,011 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:30,200 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88874700579732, 'longitude': -95.95711070459642, 'altitude': 945.9289748960645, 'speed': 49.69587955808923, 'heading': 199.73521674612974}
+2025-07-26 17:35:30,454 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:31,201 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88876295165877, 'longitude': -95.95709654479892, 'altitude': 945.8955224505006, 'speed': 49.43704592915129, 'heading': 200.57922262976305}
+2025-07-26 17:35:31,343 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:31,764 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:32,203 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88886204137544, 'longitude': -95.95705741130118, 'altitude': 945.9489315277943, 'speed': 49.4736692377201, 'heading': 201.36252579040882}
+2025-07-26 17:35:32,421 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:33,008 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:33,204 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88876504606674, 'longitude': -95.95710751087609, 'altitude': 946.629055887468, 'speed': 49.82996206371171, 'heading': 200.83901237784966}
+2025-07-26 17:35:33,851 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:34,206 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88884464522932, 'longitude': -95.95716352450923, 'altitude': 947.1103289677703, 'speed': 50.80941872956619, 'heading': 200.21322114349417}
+2025-07-26 17:35:34,666 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:35,130 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:35,207 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88881761235902, 'longitude': -95.95724912129609, 'altitude': 946.527654205092, 'speed': 50.34550335579036, 'heading': 200.52781254269073}
+2025-07-26 17:35:35,629 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:35,930 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:36,208 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88886558692964, 'longitude': -95.95723230456116, 'altitude': 946.5667616902488, 'speed': 51.09351980609829, 'heading': 201.21384855001617}
+2025-07-26 17:35:36,570 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:36,984 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:37,210 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88877488044992, 'longitude': -95.95727154353192, 'altitude': 946.4183488117378, 'speed': 50.76983159692081, 'heading': 201.87991594282857}
+2025-07-26 17:35:37,870 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:38,105 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:38,211 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88881515627924, 'longitude': -95.95718352058066, 'altitude': 945.5483423514271, 'speed': 51.65976052659281, 'heading': 201.20182398784814}
+2025-07-26 17:35:38,387 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:39,178 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:39,212 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888797341219636, 'longitude': -95.95723183972079, 'altitude': 945.5235421064539, 'speed': 51.578012107553285, 'heading': 201.2011068289162}
+2025-07-26 17:35:39,973 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:40,091 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:40,213 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8888891333089, 'longitude': -95.95720144083927, 'altitude': 945.3185049451035, 'speed': 51.56732200465111, 'heading': 200.94201984103492}
+2025-07-26 17:35:40,303 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:40,812 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:41,214 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88882964259152, 'longitude': -95.95712975222274, 'altitude': 945.6776419505514, 'speed': 51.36537471671364, 'heading': 200.7113093511254}
+2025-07-26 17:35:41,261 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:41,637 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:42,221 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88878899445541, 'longitude': -95.95704911848662, 'altitude': 946.2240341172112, 'speed': 51.30299480446122, 'heading': 200.74285623628094}
+2025-07-26 17:35:42,372 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:43,222 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88874947381273, 'longitude': -95.95711719179582, 'altitude': 945.7991292148195, 'speed': 51.03039455803995, 'heading': 200.7370759198572}
+2025-07-26 17:35:43,343 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:43,640 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:44,047 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:44,224 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888660197134065, 'longitude': -95.9571852583877, 'altitude': 946.3522485337628, 'speed': 51.066743418856234, 'heading': 201.67926306579767}
+2025-07-26 17:35:44,597 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:45,016 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:45,226 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888672622314104, 'longitude': -95.9571490991547, 'altitude': 945.6264323792067, 'speed': 51.55407622665747, 'heading': 201.52904728163344}
+2025-07-26 17:35:45,854 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:45,993 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:46,227 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88861965622628, 'longitude': -95.9572324420017, 'altitude': 945.9985001835199, 'speed': 51.66894198996394, 'heading': 200.836419770054}
+2025-07-26 17:35:46,947 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:47,228 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888595332935736, 'longitude': -95.95733158540118, 'altitude': 946.5310284533983, 'speed': 51.181468119409594, 'heading': 200.31542227540038}
+2025-07-26 17:35:47,354 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:48,230 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88851466445504, 'longitude': -95.95736849184148, 'altitude': 946.731091186029, 'speed': 50.73196693041661, 'heading': 199.6616316182286}
+2025-07-26 17:35:48,276 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:48,433 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:49,231 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88851402868772, 'longitude': -95.95737708163867, 'altitude': 946.041517159516, 'speed': 50.98121387586345, 'heading': 199.0520585586514}
+2025-07-26 17:35:49,350 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:49,899 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:50,232 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888475404950896, 'longitude': -95.95743910128147, 'altitude': 946.5615237582089, 'speed': 51.218890182999424, 'heading': 199.0589154979733}
+2025-07-26 17:35:50,669 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:51,233 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88847409058136, 'longitude': -95.9574415511728, 'altitude': 946.2467380751135, 'speed': 51.61349308060642, 'heading': 199.2826221704053}
+2025-07-26 17:35:51,338 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:52,126 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:52,234 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88848228262787, 'longitude': -95.9575075710809, 'altitude': 946.8735251672806, 'speed': 51.82643940019912, 'heading': 199.35539865448635}
+2025-07-26 17:35:52,905 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:53,117 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:53,235 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88852618688112, 'longitude': -95.95750008080763, 'altitude': 947.5426104982705, 'speed': 51.8363502862394, 'heading': 198.7300729178172}
+2025-07-26 17:35:53,815 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:54,060 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:54,238 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888475590558585, 'longitude': -95.9574421668527, 'altitude': 947.0062905191702, 'speed': 52.440496606283965, 'heading': 198.80070043521354}
+2025-07-26 17:35:54,289 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:54,578 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:55,198 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:55,240 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88845740061889, 'longitude': -95.95739172222237, 'altitude': 946.4152141512668, 'speed': 52.10538695214141, 'heading': 199.04059150954265}
+2025-07-26 17:35:55,685 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:55,961 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:56,241 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88837702012911, 'longitude': -95.95742046567467, 'altitude': 947.1032920997313, 'speed': 52.856214178021695, 'heading': 199.7243184058152}
+2025-07-26 17:35:56,657 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:56,940 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:57,242 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888313542683456, 'longitude': -95.95737227247447, 'altitude': 947.1428519747905, 'speed': 51.95152515569475, 'heading': 199.70156270653834}
+2025-07-26 17:35:57,939 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:58,243 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888392080578186, 'longitude': -95.95733416543116, 'altitude': 946.7436153118499, 'speed': 51.35921937572228, 'heading': 199.5581128307525}
+2025-07-26 17:35:58,339 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:35:59,126 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:35:59,244 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888396609888986, 'longitude': -95.95728192833806, 'altitude': 945.8467713691919, 'speed': 51.940928874247135, 'heading': 200.05009965668302}
+2025-07-26 17:35:59,489 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:00,187 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:00,245 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88846886010607, 'longitude': -95.9571959277242, 'altitude': 945.9741099717864, 'speed': 51.92347005206286, 'heading': 201.03757882132578}
+2025-07-26 17:36:00,992 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:01,107 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:01,247 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888375315896084, 'longitude': -95.95712158402245, 'altitude': 945.4178484381724, 'speed': 52.73596269724428, 'heading': 200.89251990859495}
+2025-07-26 17:36:01,392 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:01,651 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:02,040 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:02,248 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888425318346556, 'longitude': -95.95712432652327, 'altitude': 945.345279177206, 'speed': 53.542178342884945, 'heading': 200.104139935267}
+2025-07-26 17:36:02,293 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:02,890 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:03,249 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888511921657354, 'longitude': -95.95704389761286, 'altitude': 945.9165217351529, 'speed': 53.778788447675495, 'heading': 199.66185785234677}
+2025-07-26 17:36:03,736 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:04,251 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88847291515537, 'longitude': -95.95706758887418, 'altitude': 946.4796310458619, 'speed': 53.61805561323219, 'heading': 199.88240732956245}
+2025-07-26 17:36:04,400 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:04,827 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:05,021 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:05,251 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88850093126878, 'longitude': -95.95704229028551, 'altitude': 947.2858344954464, 'speed': 53.51980720495943, 'heading': 199.56695416145357}
+2025-07-26 17:36:05,800 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:05,945 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:06,253 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888467484883826, 'longitude': -95.9569800676928, 'altitude': 947.6526338668352, 'speed': 53.56266509844081, 'heading': 200.36320397089972}
+2025-07-26 17:36:06,565 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:07,255 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888565007541324, 'longitude': -95.95705655865369, 'altitude': 947.3490479250696, 'speed': 53.388175148931204, 'heading': 201.10640762278192}
+2025-07-26 17:36:07,469 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:07,634 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:08,077 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:08,256 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888468664424444, 'longitude': -95.95704608877374, 'altitude': 946.433730289428, 'speed': 52.93952015269832, 'heading': 200.82356230160406}
+2025-07-26 17:36:08,759 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:09,257 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88849774465763, 'longitude': -95.95706740081265, 'altitude': 946.5154520921963, 'speed': 51.94122839964391, 'heading': 201.29054363783084}
+2025-07-26 17:36:09,320 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:09,716 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:10,259 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88850031215986, 'longitude': -95.95704345103712, 'altitude': 947.4454734312544, 'speed': 52.209273518166384, 'heading': 201.45758601338517}
+2025-07-26 17:36:10,652 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:11,133 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:11,260 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88859126119905, 'longitude': -95.95701363339286, 'altitude': 948.3612460158889, 'speed': 51.61486571317756, 'heading': 201.39594532059905}
+2025-07-26 17:36:12,128 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:12,261 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88849790073993, 'longitude': -95.95695841854163, 'altitude': 948.6722797488129, 'speed': 51.59139824612701, 'heading': 201.7202695845215}
+2025-07-26 17:36:12,371 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:13,191 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:13,262 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88857834372023, 'longitude': -95.95704660981053, 'altitude': 948.0655161437555, 'speed': 52.542561960895654, 'heading': 201.04713519259107}
+2025-07-26 17:36:13,783 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:14,077 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:14,263 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88860132256013, 'longitude': -95.95697741707698, 'altitude': 949.0537635883376, 'speed': 52.03722453705756, 'heading': 200.54481214307876}
+2025-07-26 17:36:14,704 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:14,968 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:15,265 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88866928105854, 'longitude': -95.9569747474737, 'altitude': 949.8466813682004, 'speed': 52.51588792666853, 'heading': 199.95302290338384}
+2025-07-26 17:36:15,967 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:16,266 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88876092620596, 'longitude': -95.95705895164834, 'altitude': 950.5420490357704, 'speed': 52.01678916400129, 'heading': 199.8402336623529}
+2025-07-26 17:36:16,597 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:17,267 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88868660126233, 'longitude': -95.9569846074581, 'altitude': 949.7699091528747, 'speed': 52.62690448464105, 'heading': 199.88323036413863}
+2025-07-26 17:36:17,449 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:17,580 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:17,864 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:18,270 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8886841165321, 'longitude': -95.95690977993, 'altitude': 948.9325773343019, 'speed': 53.47191849592171, 'heading': 200.5080864578269}
+2025-07-26 17:36:18,781 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:19,271 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867349011637, 'longitude': -95.95699353157192, 'altitude': 948.4122960493908, 'speed': 53.45363528414209, 'heading': 201.44830948548548}
+2025-07-26 17:36:19,716 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:20,082 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:20,272 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88876202347774, 'longitude': -95.95702506342408, 'altitude': 947.9061543734233, 'speed': 52.62544546003197, 'heading': 201.90065485840017}
+2025-07-26 17:36:20,854 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:21,273 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888749455333844, 'longitude': -95.95709768807264, 'altitude': 947.654151424304, 'speed': 53.37246485994036, 'heading': 201.70498365906238}
+2025-07-26 17:36:21,827 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:22,274 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867752490758, 'longitude': -95.95708099553252, 'altitude': 947.7094924943979, 'speed': 53.54273794101248, 'heading': 202.5554473076071}
+2025-07-26 17:36:22,626 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:22,949 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:23,097 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:23,275 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88864176216655, 'longitude': -95.95712458722461, 'altitude': 947.3357762118585, 'speed': 54.41183601078638, 'heading': 201.8153268972648}
+2025-07-26 17:36:23,778 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:24,277 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867723168563, 'longitude': -95.95708802950652, 'altitude': 947.7454986550742, 'speed': 53.5942894830804, 'heading': 202.72863080188196}
+2025-07-26 17:36:24,376 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:25,203 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:25,280 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88862859886862, 'longitude': -95.95717190020777, 'altitude': 948.1345932035274, 'speed': 52.970546180883616, 'heading': 202.29211389134306}
+2025-07-26 17:36:25,477 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:26,018 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:26,281 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888605297768684, 'longitude': -95.95717490261626, 'altitude': 948.6141807440516, 'speed': 53.13344437320067, 'heading': 202.8882810955608}
+2025-07-26 17:36:26,290 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:26,624 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:27,284 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88853715251052, 'longitude': -95.95723137388659, 'altitude': 949.4895208262485, 'speed': 54.027087484367854, 'heading': 202.24638214930687}
+2025-07-26 17:36:27,423 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:28,242 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:28,289 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88855657050026, 'longitude': -95.95715523447913, 'altitude': 949.5688871371982, 'speed': 53.96182265992478, 'heading': 202.64409869851073}
+2025-07-26 17:36:28,525 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:28,930 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:29,290 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88859703000088, 'longitude': -95.95706696681782, 'altitude': 949.8185433024338, 'speed': 53.60939053539647, 'heading': 201.83172578326952}
+2025-07-26 17:36:29,316 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:29,516 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:30,291 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88862813688034, 'longitude': -95.95712789810837, 'altitude': 949.419562221347, 'speed': 53.732741586769, 'heading': 200.9977996296465}
+2025-07-26 17:36:30,391 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:30,844 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:31,291 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88861066832949, 'longitude': -95.95708205498022, 'altitude': 950.3770546436667, 'speed': 53.706499274405054, 'heading': 200.8359655426155}
+2025-07-26 17:36:31,807 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:32,150 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:32,292 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88856763289024, 'longitude': -95.95699053534604, 'altitude': 949.4839427281441, 'speed': 54.55514845704901, 'heading': 201.8309365962427}
+2025-07-26 17:36:32,922 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:33,293 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88863292745241, 'longitude': -95.95697793226117, 'altitude': 950.3260989487804, 'speed': 53.69059108748825, 'heading': 202.20254659909173}
+2025-07-26 17:36:33,802 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:34,294 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888590814614766, 'longitude': -95.95697248805484, 'altitude': 949.6523311137868, 'speed': 52.88707296567945, 'heading': 201.98347188897986}
+2025-07-26 17:36:34,776 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:35,295 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888557501902085, 'longitude': -95.95693849261578, 'altitude': 950.0124542912695, 'speed': 52.18907441713862, 'heading': 201.93208234837468}
+2025-07-26 17:36:35,464 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:36,296 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88862196517303, 'longitude': -95.95702033011915, 'altitude': 950.8583515759542, 'speed': 52.88676042678719, 'heading': 202.75833932001922}
+2025-07-26 17:36:36,468 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:37,297 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888712678397, 'longitude': -95.95694191279254, 'altitude': 950.9337348440109, 'speed': 52.79131481131988, 'heading': 202.13772967815024}
+2025-07-26 17:36:37,424 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:38,232 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:38,298 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88873992311913, 'longitude': -95.95686508852648, 'altitude': 950.3220519053741, 'speed': 52.52891610684704, 'heading': 201.4135817040744}
+2025-07-26 17:36:38,601 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:38,953 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:39,299 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88881698272489, 'longitude': -95.95695671043745, 'altitude': 949.9740649716445, 'speed': 53.194848406821336, 'heading': 202.37158909192235}
+2025-07-26 17:36:39,653 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:40,275 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:40,300 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88871898390917, 'longitude': -95.95697346695943, 'altitude': 949.5452750383673, 'speed': 53.30931134161782, 'heading': 202.67969804150027}
+2025-07-26 17:36:40,508 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:40,677 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:41,226 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:41,301 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867233935491, 'longitude': -95.95695769960999, 'altitude': 950.4978400569004, 'speed': 53.80702619591577, 'heading': 201.8664905761413}
+2025-07-26 17:36:41,758 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:42,191 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:42,302 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88864127276037, 'longitude': -95.95694847884141, 'altitude': 951.1796040284456, 'speed': 54.53601338342999, 'heading': 202.6170829246086}
+2025-07-26 17:36:42,673 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:43,305 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888672751552406, 'longitude': -95.95693082718641, 'altitude': 950.4923689706583, 'speed': 54.50005068640137, 'heading': 203.04926901263752}
+2025-07-26 17:36:43,321 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:43,478 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:43,638 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:44,306 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88863810012862, 'longitude': -95.95692283251923, 'altitude': 951.4279138608152, 'speed': 54.740104657230276, 'heading': 203.05142532898094}
+2025-07-26 17:36:44,578 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:44,723 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:45,163 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:45,307 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888628035909626, 'longitude': -95.95698192556796, 'altitude': 952.1049466012653, 'speed': 54.63611023388226, 'heading': 202.81798169007627}
+2025-07-26 17:36:45,638 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:46,308 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88855132247923, 'longitude': -95.95701187733773, 'altitude': 951.8216119119058, 'speed': 53.70058442111984, 'heading': 202.44388485043558}
+2025-07-26 17:36:46,475 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:47,024 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:47,179 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:47,314 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88847057615679, 'longitude': -95.95703334568887, 'altitude': 951.3671495639746, 'speed': 53.79762199281374, 'heading': 201.4939596415021}
+2025-07-26 17:36:48,098 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:48,315 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88838418125102, 'longitude': -95.95697777352134, 'altitude': 952.3291645749578, 'speed': 53.54024803073485, 'heading': 202.18113953636663}
+2025-07-26 17:36:48,891 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:49,316 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888390160095334, 'longitude': -95.95706063586097, 'altitude': 953.0418524737906, 'speed': 53.031199937563805, 'heading': 201.21831015028943}
+2025-07-26 17:36:49,453 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:49,835 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:50,062 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:50,318 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888386404313366, 'longitude': -95.95711190389622, 'altitude': 953.5674758873708, 'speed': 53.727992677122096, 'heading': 200.46573549240543}
+2025-07-26 17:36:50,455 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:50,579 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:51,282 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:51,319 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88838666466533, 'longitude': -95.95716057622688, 'altitude': 953.5581036301735, 'speed': 54.68503836710769, 'heading': 199.52087195164628}
+2025-07-26 17:36:52,022 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:52,320 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8884215138983, 'longitude': -95.95707375597304, 'altitude': 952.6299592449868, 'speed': 55.677478968936114, 'heading': 199.0800678471332}
+2025-07-26 17:36:52,580 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:52,731 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:53,321 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888501176441686, 'longitude': -95.95708194267108, 'altitude': 952.6991805664723, 'speed': 55.56114034277026, 'heading': 200.02226147288636}
+2025-07-26 17:36:53,442 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:54,056 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:54,315 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:54,322 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88852615963996, 'longitude': -95.95706526251998, 'altitude': 952.5273364601148, 'speed': 55.06786260575007, 'heading': 200.8415924522741}
+2025-07-26 17:36:54,995 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:55,323 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888604850158515, 'longitude': -95.95709523756855, 'altitude': 953.3733043001376, 'speed': 55.5321322430971, 'heading': 201.21609220846415}
+2025-07-26 17:36:55,347 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:56,246 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:36:56,324 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8886608617168, 'longitude': -95.95713815971821, 'altitude': 952.9455030674635, 'speed': 55.591748173781276, 'heading': 200.5551226246803}
+2025-07-26 17:36:57,094 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:57,325 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88859927363889, 'longitude': -95.95714506414052, 'altitude': 953.9376628414277, 'speed': 56.324943611795426, 'heading': 200.12326634369737}
+2025-07-26 17:36:57,976 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:58,327 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888605936427886, 'longitude': -95.95706478329093, 'altitude': 953.7764236077334, 'speed': 55.51665596335904, 'heading': 199.26117273142123}
+2025-07-26 17:36:58,961 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:36:59,339 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88854155923727, 'longitude': -95.95708819970201, 'altitude': 954.0880185166856, 'speed': 54.812800989853244, 'heading': 199.95632913696647}
+2025-07-26 17:36:59,564 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:00,023 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:00,340 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88860349887615, 'longitude': -95.95703631758774, 'altitude': 954.8308313825652, 'speed': 54.911164184678526, 'heading': 200.68211567158264}
+2025-07-26 17:37:00,374 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:00,934 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:01,341 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88861728029221, 'longitude': -95.95700757827987, 'altitude': 954.7946636937666, 'speed': 54.81907568141097, 'heading': 200.83185092618916}
+2025-07-26 17:37:01,606 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:02,342 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88866332055913, 'longitude': -95.95705472996107, 'altitude': 954.6496539864731, 'speed': 54.049882997035816, 'heading': 200.9076220118173}
+2025-07-26 17:37:02,530 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:02,694 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:03,343 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88870339570725, 'longitude': -95.95707010208852, 'altitude': 954.8825581554509, 'speed': 53.63480141498838, 'heading': 199.91575756573772}
+2025-07-26 17:37:03,633 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:03,939 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:04,344 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888662105346576, 'longitude': -95.95711836093876, 'altitude': 953.9741275691391, 'speed': 52.97842637202509, 'heading': 199.14172442108435}
+2025-07-26 17:37:04,613 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:05,326 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:05,375 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888723552415634, 'longitude': -95.95703674508535, 'altitude': 953.4442107755041, 'speed': 53.33265391761907, 'heading': 199.29460626366284}
+2025-07-26 17:37:06,084 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:06,376 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88873288043973, 'longitude': -95.95710334520749, 'altitude': 952.5641207270745, 'speed': 52.871352104734356, 'heading': 199.7379722025816}
+2025-07-26 17:37:06,831 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:07,173 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:07,377 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88880087440599, 'longitude': -95.95705354678118, 'altitude': 952.4416281458551, 'speed': 53.39493325769171, 'heading': 198.8967087557264}
+2025-07-26 17:37:07,818 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:08,379 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88871452481782, 'longitude': -95.95700317086221, 'altitude': 952.7414975376352, 'speed': 52.80412696437201, 'heading': 198.61174610293173}
+2025-07-26 17:37:08,788 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:09,070 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:09,380 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88876110915013, 'longitude': -95.95702003246093, 'altitude': 952.8777424927085, 'speed': 53.59539649607838, 'heading': 199.19832443886787}
+2025-07-26 17:37:09,955 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:10,381 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888690152276645, 'longitude': -95.95697168401739, 'altitude': 953.1798319028846, 'speed': 53.49704538223787, 'heading': 198.26632867783223}
+2025-07-26 17:37:10,499 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:10,901 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:11,262 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:11,389 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88870112245095, 'longitude': -95.95692004464084, 'altitude': 952.3853073880072, 'speed': 52.89333050754779, 'heading': 198.7973448781416}
+2025-07-26 17:37:12,000 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:12,390 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88862933638764, 'longitude': -95.95687748931228, 'altitude': 952.985039240224, 'speed': 52.43914065525252, 'heading': 199.55616806002925}
+2025-07-26 17:37:12,655 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:13,391 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88866364529978, 'longitude': -95.95688801904899, 'altitude': 952.2349202551914, 'speed': 52.489255867755425, 'heading': 198.70105612219874}
+2025-07-26 17:37:13,613 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:14,392 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888604156891, 'longitude': -95.95690171490212, 'altitude': 951.7293783141572, 'speed': 52.87106348034527, 'heading': 199.28567084555135}
+2025-07-26 17:37:14,491 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:15,207 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:15,393 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88867338382629, 'longitude': -95.95687834683933, 'altitude': 951.186467484025, 'speed': 52.29745976366499, 'heading': 198.81291617801816}
+2025-07-26 17:37:15,572 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:15,751 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:16,288 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:16,394 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88863416399924, 'longitude': -95.9568976641064, 'altitude': 951.2143968801414, 'speed': 51.30848509617148, 'heading': 199.03732001495058}
+2025-07-26 17:37:17,170 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:17,394 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888575673260554, 'longitude': -95.95682664219416, 'altitude': 951.4909368756813, 'speed': 51.469645963179445, 'heading': 198.35466423247783}
+2025-07-26 17:37:17,548 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:18,395 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88855335472755, 'longitude': -95.95676141544372, 'altitude': 951.6681872132792, 'speed': 52.003302960944914, 'heading': 199.21212779650247}
+2025-07-26 17:37:18,478 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:18,796 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:18,990 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:19,396 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88857105230461, 'longitude': -95.9567243729227, 'altitude': 952.2565814881706, 'speed': 51.80201082874927, 'heading': 198.78232616813213}
+2025-07-26 17:37:19,572 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:20,398 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88861577491104, 'longitude': -95.95668876125782, 'altitude': 951.5452395679688, 'speed': 51.640091768943336, 'heading': 198.767361159295}
+2025-07-26 17:37:20,402 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:21,095 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:21,398 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88852970607367, 'longitude': -95.95678626927622, 'altitude': 950.8474838145085, 'speed': 51.67322369435468, 'heading': 199.51894208291822}
+2025-07-26 17:37:21,616 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:22,274 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:22,401 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88852136138394, 'longitude': -95.9567191377841, 'altitude': 951.311021308673, 'speed': 51.593404323093665, 'heading': 199.91349759535998}
+2025-07-26 17:37:22,825 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:23,404 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88858493353822, 'longitude': -95.9566705537891, 'altitude': 951.6148790741461, 'speed': 50.99794767758527, 'heading': 200.15875126673203}
+2025-07-26 17:37:23,479 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:24,163 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:24,404 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88850602758817, 'longitude': -95.95670191702175, 'altitude': 951.4427041839699, 'speed': 51.44372201365485, 'heading': 199.5217266721034}
+2025-07-26 17:37:24,728 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:24,946 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:25,405 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88852180501014, 'longitude': -95.95675461663143, 'altitude': 951.0974653997199, 'speed': 51.54561585635843, 'heading': 198.9627497790009}
+2025-07-26 17:37:25,790 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:26,086 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:26,406 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888489658940685, 'longitude': -95.95667480812011, 'altitude': 950.1127496636554, 'speed': 51.889255212960165, 'heading': 198.03130515667584}
+2025-07-26 17:37:26,416 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:26,843 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:27,407 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88850370667179, 'longitude': -95.95670181983587, 'altitude': 950.6386483334503, 'speed': 52.61834932678962, 'heading': 198.29161696204494}
+2025-07-26 17:37:27,474 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:28,232 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:28,334 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:28,409 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88840500144345, 'longitude': -95.95678742437462, 'altitude': 949.7311103402567, 'speed': 52.45013795197006, 'heading': 198.19710618847995}
+2025-07-26 17:37:28,630 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:29,394 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:29,410 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88832352533407, 'longitude': -95.95677726334114, 'altitude': 949.7236324377864, 'speed': 52.50416871498393, 'heading': 197.3538407005506}
+2025-07-26 17:37:29,812 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:30,034 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:30,411 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88831688904664, 'longitude': -95.95680316467636, 'altitude': 949.6526932570715, 'speed': 52.97188731491062, 'heading': 197.14627623605512}
+2025-07-26 17:37:30,854 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:31,413 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88824153965466, 'longitude': -95.95688552129577, 'altitude': 948.6957478891815, 'speed': 53.24217866441145, 'heading': 196.40853418109543}
+2025-07-26 17:37:31,444 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:31,793 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:32,263 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:32,414 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888187204248794, 'longitude': -95.95693908693883, 'altitude': 948.3857239301528, 'speed': 54.23957327586673, 'heading': 195.95303171855744}
+2025-07-26 17:37:32,853 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:33,204 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:33,415 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8882854545945, 'longitude': -95.9570158362733, 'altitude': 948.2029367161067, 'speed': 55.112098054825395, 'heading': 195.48193088073452}
+2025-07-26 17:37:33,857 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:34,416 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88819629967736, 'longitude': -95.9570947618116, 'altitude': 947.975321564678, 'speed': 55.06149007175353, 'heading': 195.82420190144836}
+2025-07-26 17:37:34,582 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:35,122 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:35,418 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888252952831344, 'longitude': -95.95710571095883, 'altitude': 948.1858357458434, 'speed': 55.11806874834304, 'heading': 196.7979605469707}
+2025-07-26 17:37:35,487 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:36,027 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:36,422 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.888202058558285, 'longitude': -95.95713065531736, 'altitude': 949.1078702438559, 'speed': 54.66553448500832, 'heading': 196.9371113677894}
+2025-07-26 17:37:36,696 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:37,154 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:37,424 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88819802757192, 'longitude': -95.95704882101067, 'altitude': 948.7047008558279, 'speed': 54.99865752291788, 'heading': 196.73627397406656}
+2025-07-26 17:37:37,924 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:38,176 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:38,425 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88810112950804, 'longitude': -95.95713210689709, 'altitude': 948.4822159928423, 'speed': 55.19439172607827, 'heading': 197.12789504039955}
+2025-07-26 17:37:38,873 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:39,110 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:39,426 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88806350371016, 'longitude': -95.95717139132721, 'altitude': 948.8197135250097, 'speed': 56.08236657326225, 'heading': 197.26652857990874}
+2025-07-26 17:37:39,452 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:39,967 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:40,241 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:40,429 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8880972102188, 'longitude': -95.95714649314039, 'altitude': 947.8649132117986, 'speed': 56.908885567301745, 'heading': 196.84497942748325}
+2025-07-26 17:37:40,739 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:41,430 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8881058932433, 'longitude': -95.95717872173365, 'altitude': 948.8186307747318, 'speed': 56.11581105489049, 'heading': 196.78273944384716}
+2025-07-26 17:37:41,732 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:42,431 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88811448500678, 'longitude': -95.95723958590334, 'altitude': 948.3568777873751, 'speed': 56.804922400460605, 'heading': 196.83677894476946}
+2025-07-26 17:37:42,639 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:43,108 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:43,432 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8880630455706, 'longitude': -95.95722100796894, 'altitude': 948.909110870948, 'speed': 57.12036078823369, 'heading': 197.25316436841783}
+2025-07-26 17:37:43,749 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:44,000 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:44,434 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887996455218634, 'longitude': -95.95718005151164, 'altitude': 948.4117875495422, 'speed': 57.378147207819126, 'heading': 197.77080338165393}
+2025-07-26 17:37:44,510 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:44,615 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:45,434 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8879489625587, 'longitude': -95.95719313655516, 'altitude': 948.2976172246415, 'speed': 57.606886646019326, 'heading': 198.00913261068274}
+2025-07-26 17:37:45,540 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:45,764 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:46,072 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:46,294 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:46,437 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887953870620514, 'longitude': -95.95720293011875, 'altitude': 948.8177450372314, 'speed': 57.210906876449535, 'heading': 197.35367224235458}
+2025-07-26 17:37:46,635 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:47,409 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:47,438 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887902079655404, 'longitude': -95.95715056096049, 'altitude': 949.4608300155153, 'speed': 57.35019053803969, 'heading': 196.4135940586093}
+2025-07-26 17:37:47,872 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:48,439 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887856321588934, 'longitude': -95.9572077753097, 'altitude': 949.3808325987461, 'speed': 56.6310820081106, 'heading': 196.50573114924097}
+2025-07-26 17:37:48,670 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:48,864 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:48,971 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:49,440 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887802767822805, 'longitude': -95.95725141247462, 'altitude': 948.9593112058159, 'speed': 57.338826440879075, 'heading': 197.43713702063263}
+2025-07-26 17:37:49,592 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:50,010 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:50,441 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88780101152087, 'longitude': -95.95732326328637, 'altitude': 949.9409242214953, 'speed': 56.62467696213662, 'heading': 197.34875440243817}
+2025-07-26 17:37:50,875 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:51,302 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:51,442 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8877422687651, 'longitude': -95.95723855309444, 'altitude': 949.8487683965236, 'speed': 55.674044172276595, 'heading': 196.4435776694619}
+2025-07-26 17:37:51,769 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:52,443 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88769595817814, 'longitude': -95.95733500316562, 'altitude': 949.2178385408458, 'speed': 56.51538158807894, 'heading': 197.38522282872725}
+2025-07-26 17:37:52,463 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:53,083 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:53,452 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88761685841802, 'longitude': -95.95738906436938, 'altitude': 949.9807738651737, 'speed': 55.87596444429629, 'heading': 197.91650605439108}
+2025-07-26 17:37:53,862 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:54,453 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887669611060566, 'longitude': -95.95744053132798, 'altitude': 949.2941406688311, 'speed': 54.91818594655178, 'heading': 197.04696685848577}
+2025-07-26 17:37:54,697 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:55,454 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887738383545646, 'longitude': -95.95739447534156, 'altitude': 949.4944920810674, 'speed': 55.19721402031301, 'heading': 196.28482928267593}
+2025-07-26 17:37:55,479 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:56,327 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:56,455 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887751641046584, 'longitude': -95.95738840053492, 'altitude': 948.5928633135594, 'speed': 55.52466273355072, 'heading': 195.6792789600808}
+2025-07-26 17:37:56,870 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:57,338 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:37:57,456 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88782931936786, 'longitude': -95.95738455341117, 'altitude': 947.6210035392976, 'speed': 55.64261807888573, 'heading': 196.14353233929126}
+2025-07-26 17:37:58,329 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:58,457 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88773378216908, 'longitude': -95.9574822008729, 'altitude': 948.2574125426073, 'speed': 55.0743125327162, 'heading': 195.78585414924683}
+2025-07-26 17:37:59,283 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:37:59,458 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88763430485992, 'longitude': -95.95738221605757, 'altitude': 948.1150219305346, 'speed': 54.88060481757296, 'heading': 195.89537331289867}
+2025-07-26 17:38:00,128 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:00,459 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88754430972657, 'longitude': -95.95743651187215, 'altitude': 947.7698916221889, 'speed': 55.600504949435894, 'heading': 196.4188170421995}
+2025-07-26 17:38:00,788 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:00,906 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:01,461 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8875880716814, 'longitude': -95.95734798191954, 'altitude': 947.7644340214074, 'speed': 55.85886304894295, 'heading': 195.72118694336004}
+2025-07-26 17:38:01,609 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:02,085 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:02,462 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887527408346585, 'longitude': -95.95738831453265, 'altitude': 947.7119017392998, 'speed': 56.274336453041265, 'heading': 196.2101107114505}
+2025-07-26 17:38:02,862 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:03,463 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88759860322549, 'longitude': -95.95730651593345, 'altitude': 946.8124603012299, 'speed': 55.68821768622068, 'heading': 195.50268716792172}
+2025-07-26 17:38:03,510 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:04,445 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:04,465 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88753477263149, 'longitude': -95.95723545338245, 'altitude': 947.0429633805204, 'speed': 56.3190820841039, 'heading': 196.24818883162936}
+2025-07-26 17:38:05,090 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:05,441 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:05,466 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88750454658474, 'longitude': -95.95715151122623, 'altitude': 947.038054418668, 'speed': 57.18989911294052, 'heading': 195.75791289979256}
+2025-07-26 17:38:06,147 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:06,467 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88759059465993, 'longitude': -95.95722467724737, 'altitude': 946.430127643265, 'speed': 57.72842803285195, 'heading': 196.00265436159276}
+2025-07-26 17:38:06,532 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:07,290 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:07,468 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887561587478544, 'longitude': -95.95729987112855, 'altitude': 945.8986181269383, 'speed': 58.14055100618561, 'heading': 196.80302492858831}
+2025-07-26 17:38:07,524 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:07,742 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:08,469 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88758205003646, 'longitude': -95.95722414500587, 'altitude': 946.0029483940665, 'speed': 57.682660017116376, 'heading': 196.00737592054963}
+2025-07-26 17:38:08,715 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:09,096 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:09,310 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:09,472 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88753042248107, 'longitude': -95.9572222261526, 'altitude': 945.0754773073577, 'speed': 58.66705691635185, 'heading': 195.61605339703019}
+2025-07-26 17:38:10,008 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:10,473 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887563277337776, 'longitude': -95.9572230598943, 'altitude': 944.8874735147856, 'speed': 58.14027374161612, 'heading': 195.01659853384038}
+2025-07-26 17:38:10,745 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:11,193 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:11,474 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88756312909205, 'longitude': -95.95713166164853, 'altitude': 944.2925123333204, 'speed': 58.46437450208652, 'heading': 194.67447439064242}
+2025-07-26 17:38:11,955 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:12,475 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887592710416506, 'longitude': -95.95722016269248, 'altitude': 944.1570099160198, 'speed': 59.27210124159498, 'heading': 193.75756209128116}
+2025-07-26 17:38:12,953 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:13,462 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:13,477 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88753205051254, 'longitude': -95.95729386339724, 'altitude': 944.8627573045263, 'speed': 60.25617182955754, 'heading': 194.74226516512965}
+2025-07-26 17:38:13,608 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:14,395 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:14,478 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887515275181514, 'longitude': -95.95737774706784, 'altitude': 945.6158471029356, 'speed': 59.80804296102529, 'heading': 194.05532836237995}
+2025-07-26 17:38:15,310 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:15,449 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:15,479 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887443344632246, 'longitude': -95.95745847698564, 'altitude': 945.1532773208195, 'speed': 59.09691003629698, 'heading': 193.4142284843497}
+2025-07-26 17:38:15,781 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:16,480 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887393030715906, 'longitude': -95.95745827161983, 'altitude': 944.7381049178831, 'speed': 58.35606117340519, 'heading': 192.59097517660487}
+2025-07-26 17:38:16,613 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:16,836 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:17,480 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88736406410884, 'longitude': -95.95736359960662, 'altitude': 944.1711165393743, 'speed': 58.285573019316715, 'heading': 192.102068599015}
+2025-07-26 17:38:17,584 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:18,064 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:18,442 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:18,481 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88739790869387, 'longitude': -95.9572979285198, 'altitude': 944.684783081791, 'speed': 57.75965782571273, 'heading': 191.41207181506869}
+2025-07-26 17:38:18,701 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:19,181 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:19,483 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88746379055305, 'longitude': -95.95734367937311, 'altitude': 944.2086536141187, 'speed': 57.08181790905645, 'heading': 190.9199173210223}
+2025-07-26 17:38:19,548 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:20,028 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:20,329 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:20,484 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88746449490139, 'longitude': -95.95737258830263, 'altitude': 943.3175291343789, 'speed': 57.66488149353097, 'heading': 191.7670132605994}
+2025-07-26 17:38:20,532 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:20,810 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:21,168 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:21,485 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88746287402042, 'longitude': -95.95738324872049, 'altitude': 942.4737005336019, 'speed': 57.13549101286729, 'heading': 192.13184701857242}
+2025-07-26 17:38:21,755 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:21,882 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:22,486 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887557304456884, 'longitude': -95.95729521021958, 'altitude': 941.7413470827203, 'speed': 57.7161094629705, 'heading': 193.00655973179593}
+2025-07-26 17:38:22,863 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:23,487 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887480828518555, 'longitude': -95.95726781336936, 'altitude': 940.9409585170367, 'speed': 57.144327749199995, 'heading': 192.6856156488874}
+2025-07-26 17:38:23,805 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:24,384 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:24,488 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88742820713213, 'longitude': -95.9573402634884, 'altitude': 939.9660013837043, 'speed': 57.34937760600271, 'heading': 192.34161606136144}
+2025-07-26 17:38:25,254 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:25,490 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88751912174145, 'longitude': -95.95743781020562, 'altitude': 940.3842692301072, 'speed': 58.160585985933224, 'heading': 192.63799635469817}
+2025-07-26 17:38:26,147 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:26,491 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88755383811199, 'longitude': -95.95735843177685, 'altitude': 941.095765908072, 'speed': 59.115264801596346, 'heading': 193.02834970373934}
+2025-07-26 17:38:26,782 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:26,965 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:27,492 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887484253873794, 'longitude': -95.95728297214089, 'altitude': 940.1329181132614, 'speed': 58.64439937567921, 'heading': 193.61839656499362}
+2025-07-26 17:38:27,529 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:27,788 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:27,963 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:28,493 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88742125281763, 'longitude': -95.9573322044223, 'altitude': 940.907663313334, 'speed': 59.06460476663247, 'heading': 194.39589434650657}
+2025-07-26 17:38:28,646 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:29,310 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:29,494 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88748543660002, 'longitude': -95.95732671345289, 'altitude': 941.5280293009232, 'speed': 59.925518169197346, 'heading': 193.52809714466179}
+2025-07-26 17:38:30,194 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:30,495 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88745896767911, 'longitude': -95.95741882445705, 'altitude': 941.4548328716539, 'speed': 59.845247928491894, 'heading': 194.20229310661264}
+2025-07-26 17:38:31,189 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:31,497 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88750011747912, 'longitude': -95.9574574865046, 'altitude': 942.2602568980654, 'speed': 60.30615525424765, 'heading': 195.08004806641816}
+2025-07-26 17:38:32,054 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:32,498 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8875091253215, 'longitude': -95.95742586842978, 'altitude': 942.2791959635916, 'speed': 61.27523790370216, 'heading': 195.77381321014263}
+2025-07-26 17:38:32,958 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:33,499 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88746422852827, 'longitude': -95.95749245687273, 'altitude': 942.9626245380034, 'speed': 60.719729884841094, 'heading': 195.39503960947474}
+2025-07-26 17:38:33,553 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:34,401 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:34,500 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88751135670238, 'longitude': -95.95756868272018, 'altitude': 942.3884831966456, 'speed': 61.39721704143569, 'heading': 195.42112857498944}
+2025-07-26 17:38:35,196 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:35,501 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88746764187461, 'longitude': -95.95755704911815, 'altitude': 942.8177306719308, 'speed': 61.52413409956673, 'heading': 195.9564091927922}
+2025-07-26 17:38:36,100 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:36,478 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:36,504 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88745972451269, 'longitude': -95.95765285423417, 'altitude': 943.3535182086647, 'speed': 61.84676623601063, 'heading': 195.4492113552724}
+2025-07-26 17:38:37,278 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:37,504 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8874085640361, 'longitude': -95.95758439350776, 'altitude': 943.5323927663387, 'speed': 61.45787930303375, 'heading': 195.01318432825894}
+2025-07-26 17:38:37,707 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:37,941 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:38,505 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8873996061273, 'longitude': -95.95764476211039, 'altitude': 943.1175704466536, 'speed': 60.59681552784986, 'heading': 195.52841119655668}
+2025-07-26 17:38:38,659 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:39,036 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:39,507 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8874792456983, 'longitude': -95.9577236805821, 'altitude': 942.5834410842086, 'speed': 61.57113992591866, 'heading': 195.75592107141213}
+2025-07-26 17:38:39,830 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:40,323 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:40,508 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88751967838014, 'longitude': -95.95773168691932, 'altitude': 942.4478727247995, 'speed': 61.925557602964254, 'heading': 195.24271141130575}
+2025-07-26 17:38:41,181 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:41,509 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887450155282274, 'longitude': -95.95767510803516, 'altitude': 943.4071268760238, 'speed': 62.26675030678815, 'heading': 194.51107709615272}
+2025-07-26 17:38:41,945 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:42,510 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88736315237629, 'longitude': -95.95758835958019, 'altitude': 943.6143589069138, 'speed': 62.33066643468949, 'heading': 194.85739647538986}
+2025-07-26 17:38:42,870 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:43,102 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:43,494 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:43,511 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88733472194291, 'longitude': -95.95750679830152, 'altitude': 942.8341757807726, 'speed': 62.89017662943443, 'heading': 194.97971228921378}
+2025-07-26 17:38:43,664 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:44,370 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:44,513 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88740906835199, 'longitude': -95.95740761485705, 'altitude': 943.2020906862465, 'speed': 62.70053105643447, 'heading': 194.09675325754864}
+2025-07-26 17:38:44,962 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:45,510 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:45,514 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887417188340585, 'longitude': -95.95738399116661, 'altitude': 944.0444923767122, 'speed': 62.011723602001666, 'heading': 193.6521538384751}
+2025-07-26 17:38:45,650 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:46,159 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:46,515 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.887323471645416, 'longitude': -95.95729271910281, 'altitude': 943.066075926954, 'speed': 62.445726756240006, 'heading': 194.32922672566139}
+2025-07-26 17:38:46,885 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:47,440 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:47,516 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88729421313687, 'longitude': -95.95729064953319, 'altitude': 943.608543066014, 'speed': 62.02905906128049, 'heading': 194.1287495162998}
+2025-07-26 17:38:48,245 - core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-26 17:38:48,517 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88728201353352, 'longitude': -95.95723587978613, 'altitude': 944.1899016833744, 'speed': 61.095459228465685, 'heading': 194.47537516586925}
+2025-07-26 17:38:48,930 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:49,518 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8873147328353, 'longitude': -95.95732085457232, 'altitude': 945.1879130472734, 'speed': 60.643105050751686, 'heading': 195.13083272316447}
+2025-07-26 17:38:49,550 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:50,409 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:50,519 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88729273523418, 'longitude': -95.95732751356024, 'altitude': 945.5275361498011, 'speed': 59.64687961936297, 'heading': 194.92556256708406}
+2025-07-26 17:38:50,805 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:51,063 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:51,520 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.8873097113975, 'longitude': -95.9572774447685, 'altitude': 945.7780447635784, 'speed': 59.26899429343372, 'heading': 195.26692630084537}
+2025-07-26 17:38:51,889 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:52,521 - core.hardware.abstraction - INFO - 虚拟 GPS 已更新，坐标: {'latitude': 49.88728710764515, 'longitude': -95.95733093744829, 'altitude': 946.6943399242307, 'speed': 60.00755258558726, 'heading': 195.39785955618976}
+2025-07-26 17:38:52,625 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-26 17:38:53,021 - core.virtual_phone - INFO - 正在停止虚拟手机...
+2025-07-26 17:38:53,022 - core.virtual_phone - INFO - 虚拟手机已停止
