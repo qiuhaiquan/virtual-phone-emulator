@@ -1,0 +1,14 @@
+# 自动处理文本文件的换行符
+* text=auto
+
+# 对特定类型文件强制使用LF
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+.gitattributes text eol=lf
+
+# 对二进制文件明确指定不处理
+*.png binary
+*.jpg binary
+*.exe binary

@@ -1,0 +1,24 @@
+# src/ext/camera_module/CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)
+project(camera_module)
+
+# 设置C++标准
+set(CMAKE_CXX_STANDARD 11)
+
+# 查找Python和OpenCV
+find_package(Python3 COMPONENTS Development REQUIRED)
+find_package(OpenCV REQUIRED)
+
+# 添加头文件目录
+include_directories(${Python3_INCLUDE_DIRS})
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# 添加源文件
+add_library(camera_module SHARED camera_module.cpp)
+
+# 链接库
+target_link_libraries(camera_module ${Python3_LIBRARIES} ${OpenCV_LIBS})
+
+# 设置输出名称和位置
+set_target_properties(camera_module PROPERTIES PREFIX "")
+set_target_properties(camera_module PROPERTIES LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/../../src/core/")
