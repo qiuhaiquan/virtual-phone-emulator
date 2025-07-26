@@ -1,8 +1,8 @@
 # src/__main__.py
 import argparse
 import logging
-from ui.console_ui import ConsoleUI
-from ui.gui_ui import run_gui
+from src.ext.ui.console_ui import ConsoleUI
+from src.ext.ui.gui_ui import run_gui
 
 
 def setup_logging(level=logging.INFO):

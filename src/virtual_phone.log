@@ -1,0 +1,8 @@
+2025-07-26 16:19:31,794 - core.hardware.detector - ERROR - ºÏ≤‚CPU ß∞‹: Command 'wmic cpu get Name' returned non-zero exit status 1.
+2025-07-26 16:19:31,976 - core.hardware.detector - ERROR - ºÏ≤‚ƒ⁄¥Ê ß∞‹: Command 'wmic OS get TotalVisibleMemorySize' returned non-zero exit status 1.
+2025-07-26 16:19:32,233 - core.hardware.detector - ERROR - ºÏ≤‚¥Ê¥¢ ß∞‹: Command 'wmic logicaldisk where drivetype=3 get deviceid, freespace, size' returned non-zero exit status 1.
+2025-07-26 16:19:33,371 - core.hardware.detector - ERROR - ºÏ≤‚Õ¯¬Á ß∞‹: 'utf-8' codec can't decode byte 0xc5 in position 13: invalid continuation byte
+2025-07-26 16:19:33,548 - core.hardware.detector - ERROR - ºÏ≤‚œ‘ æ…Ë±∏ ß∞‹: Command 'wmic path win32_VideoController get Name' returned non-zero exit status 1.
+2025-07-26 16:19:33,737 - core.hardware.detector - ERROR - ºÏ≤‚…„œÒÕ∑ ß∞‹: Command 'devcon find *camera*' returned non-zero exit status 1.
+2025-07-26 16:19:33,921 - core.hardware.detector - ERROR - ºÏ≤‚“Ù∆µ…Ë±∏ ß∞‹: Command 'wmic path win32_SoundDevice get Name' returned non-zero exit status 1.
+2025-07-26 16:19:33,922 - core.virtual_phone - INFO - ’˝‘⁄∆Ù∂Ø–Èƒ‚ ÷ª˙...
