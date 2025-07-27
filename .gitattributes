@@ -1,14 +1,21 @@
-# 自动处理文本文件的换行符
+# 自动转换文本文件的行尾
 * text=auto
 
-# 对特定类型文件强制使用LF
-*.py text eol=lf
-*.md text eol=lf
-*.txt text eol=lf
+# 强制特定文件类型使用 LF 行尾
+*.c text eol=lf
+*.h text eol=lf
 *.sh text eol=lf
-.gitattributes text eol=lf
+*.py text eol=lf
+* text=auto working-tree-encoding=utf-8 eol=lf
 
-# 对二进制文件明确指定不处理
+# 强制 Windows 文件使用 CRLF 行尾
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制文件定义
 *.png binary
 *.jpg binary
-*.exe binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.jar binary
