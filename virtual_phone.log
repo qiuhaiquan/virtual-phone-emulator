@@ -1315,3 +1315,6 @@
 2025-07-26 18:20:10,988 - core.virtual_phone - INFO - 正在停止虚拟手机...
 2025-07-26 18:20:10,989 - core.virtual_phone - INFO - 虚拟手机已停止
 2025-07-26 18:20:10,990 - core.hardware.abstraction - INFO - 网络数据包正常传输
+2025-07-27 17:30:35,879 - src.ext.ui.gui_ui - INFO - 正在启动虚拟手机...
+2025-07-27 17:30:39,082 - src.ext.ui.gui_ui - INFO - 虚拟手机启动成功
+2025-07-27 17:31:02,301 - src.ext.ui.gui_ui - INFO - 正在运行APK: E:/com.tencent.tmgp.pubgmhd.apk

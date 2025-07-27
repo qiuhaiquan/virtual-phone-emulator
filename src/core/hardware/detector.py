@@ -162,3 +162,19 @@ class HardwareDetector:
         except Exception as e:
             logger.error(f"检测音频设备失败: {e}")
             self.detected_hardware["audio"] = "未知"
+
+    def detect_network(self) -> None:
+        """检测网络设备信息"""
+        try:
+            if self.os == "Windows":
+                output = subprocess.check_output("ipconfig /all", shell=True).decode()
+                self.detected_hardware["network"] = output.strip()
+            elif self.os == "Linux":
+                output = subprocess.check_output("ifconfig", shell=True).decode()
+                self.detected_hardware["network"] = output.strip()
+            elif self.os == "Darwin":
+                output = subprocess.check_output("ifconfig", shell=True).decode()
+                self.detected_hardware["network"] = output.strip()
+        except Exception as e:
+            logger.error(f"检测网络失败: {e}")
+            self.detected_hardware["network"] = "未知"
