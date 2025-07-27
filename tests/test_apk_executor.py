@@ -5,6 +5,7 @@ from unittest.mock import Mock
 from src.core.apk.python_apk_loader import PythonAPKLoader
 
 
+
 class TestAPKExecutor(unittest.TestCase):
 
     def setUp(self):
@@ -12,7 +13,7 @@ class TestAPKExecutor(unittest.TestCase):
         self.hardware_abstraction = Mock()
 
         # 创建一个临时APK文件用于测试
-        self.temp_apk = "temp_test.apk"
+        self.temp_apk = r"E:\com.tencent.tmgp.pubgmhd.apk"
         with open(self.temp_apk, 'w') as f:
             f.write("This is a test APK file")
 

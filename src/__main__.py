@@ -33,8 +33,7 @@ def main():
     if args.verbose:
         log_level = logging.DEBUG
     else:
-        # 设置为CRITICAL，停止所有日志输出
-        log_level = logging.CRITICAL
+        log_level = logging.WARNING
 
     setup_logging(log_level)
 
