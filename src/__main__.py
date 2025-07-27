@@ -2,7 +2,6 @@
 import argparse
 import logging
 from ext.ui.console_ui import ConsoleUI
-from ext.ui.gui_ui import run_gui
 import os
 import sys
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,12 +40,11 @@ def main():
 
     # 选择界面类型
     from src.ext.ui.console_ui import ConsoleUI
-    from src.ext.ui.gui_ui import GUIUI
+    from src.ext.ui.gui_ui import GUIUI,run_gui
 
     if args.gui:
         # 运行图形界面
-        ui = GUIUI()
-        ui.show()
+        run_gui()
     else:
         # 运行控制台界面
         ui = ConsoleUI()

@@ -1,12 +1,10 @@
-# src/core/hardware/detector.py
-import os
+"""负责检测和识别计算机硬件"""
 import platform
 import subprocess
 import logging
-from typing import Dict, Any
+import os
 
 logger = logging.getLogger(__name__)
-
 
 class HardwareDetector:
     """负责检测和识别计算机硬件"""
@@ -15,7 +13,7 @@ class HardwareDetector:
         self.os = platform.system()
         self.detected_hardware = {}
 
-    def detect_all_hardware(self) -> Dict[str, Any]:
+    def detect_all_hardware(self) -> dict:
         """检测并返回所有可用硬件信息"""
         self.detect_cpu()
         self.detect_memory()
@@ -31,8 +29,9 @@ class HardwareDetector:
         """检测CPU信息"""
         try:
             if self.os == "Windows":
-                output = subprocess.check_output("wmic cpu get Name", shell=True).decode()
-                self.detected_hardware["cpu"] = output.strip().split("\n")[-1].strip()
+                # 使用 PowerShell 命令获取 CPU 信息
+                output = subprocess.check_output(["powershell", "Get-WmiObject -Class Win32_Processor | Select-Object -ExpandProperty Name"], shell=False).decode()
+                self.detected_hardware["cpu"] = output.strip()
             elif self.os == "Linux":
                 with open("/proc/cpuinfo") as f:
                     for line in f:
@@ -50,8 +49,9 @@ class HardwareDetector:
         """检测内存信息"""
         try:
             if self.os == "Windows":
-                output = subprocess.check_output("wmic OS get TotalVisibleMemorySize", shell=True).decode()
-                mem_kb = int(output.strip().split("\n")[-1].strip())
+                # 使用 PowerShell 命令获取内存信息
+                output = subprocess.check_output(["powershell", "Get-WmiObject -Class Win32_OperatingSystem | Select-Object -ExpandProperty TotalVisibleMemorySize"], shell=False).decode()
+                mem_kb = int(output.strip())
                 self.detected_hardware["memory"] = f"{mem_kb / (1024 * 1024):.2f} GB"
             elif self.os == "Linux":
                 with open("/proc/meminfo") as f:
@@ -72,9 +72,9 @@ class HardwareDetector:
         """检测存储设备信息"""
         try:
             if self.os == "Windows":
-                output = subprocess.check_output("wmic logicaldisk where drivetype=3 get deviceid, freespace, size",
-                                                 shell=True).decode()
-                lines = output.strip().split("\n")[1:]  # 跳过标题行
+                # 使用 PowerShell 命令获取存储设备信息
+                output = subprocess.check_output(["powershell", "Get-WmiObject -Class Win32_LogicalDisk -Filter \"DriveType=3\" | Select-Object DeviceID, FreeSpace, Size | Format-Table -HideTableHeaders"], shell=False).decode()
+                lines = output.strip().split("\n")
                 drives = []
                 for line in lines:
                     if line.strip():
@@ -112,28 +112,13 @@ class HardwareDetector:
             logger.error(f"检测存储失败: {e}")
             self.detected_hardware["storage"] = "未知"
 
-    def detect_network(self) -> None:
-        """检测网络设备信息"""
-        try:
-            if self.os == "Windows":
-                output = subprocess.check_output("ipconfig /all", shell=True).decode()
-                self.detected_hardware["network"] = output.strip()
-            elif self.os == "Linux":
-                output = subprocess.check_output("ifconfig", shell=True).decode()
-                self.detected_hardware["network"] = output.strip()
-            elif self.os == "Darwin":
-                output = subprocess.check_output("ifconfig", shell=True).decode()
-                self.detected_hardware["network"] = output.strip()
-        except Exception as e:
-            logger.error(f"检测网络失败: {e}")
-            self.detected_hardware["network"] = "未知"
-
     def detect_display(self) -> None:
         """检测显示设备信息"""
         try:
             if self.os == "Windows":
-                output = subprocess.check_output("wmic path win32_VideoController get Name", shell=True).decode()
-                self.detected_hardware["display"] = output.strip().split("\n")[-1].strip()
+                # 使用 PowerShell 命令获取显示设备信息
+                output = subprocess.check_output(["powershell", "Get-WmiObject -Class Win32_VideoController | Select-Object -ExpandProperty Name"], shell=False).decode()
+                self.detected_hardware["display"] = output.strip()
             elif self.os == "Linux":
                 output = subprocess.check_output("lspci | grep VGA", shell=True).decode()
                 self.detected_hardware["display"] = output.strip()
@@ -165,8 +150,9 @@ class HardwareDetector:
         """检测音频设备"""
         try:
             if self.os == "Windows":
-                output = subprocess.check_output("wmic path win32_SoundDevice get Name", shell=True).decode()
-                self.detected_hardware["audio"] = output.strip().split("\n")[-1].strip()
+                # 使用 PowerShell 命令获取音频设备信息
+                output = subprocess.check_output(["powershell", "Get-WmiObject -Class Win32_SoundDevice | Select-Object -ExpandProperty Name"], shell=False).decode()
+                self.detected_hardware["audio"] = output.strip()
             elif self.os == "Linux":
                 output = subprocess.check_output("aplay -l", shell=True).decode()
                 self.detected_hardware["audio"] = bool(output.strip())
