@@ -2,9 +2,10 @@
 import sys
 import logging
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QVBoxLayout,
-                             QHBoxLayout, QTextEdit, QFileDialog, QWidget, QLabel)
+                             QHBoxLayout, QTextEdit, QFileDialog, QWidget, QLabel, QDialog, QGroupBox, QListWidget,
+                             QInputDialog, QMessageBox)
 from PyQt5.QtCore import Qt
-from core import VirtualPhone
+from src.core.virtual_phone import VirtualPhone
 
 logger = logging.getLogger(__name__)
 

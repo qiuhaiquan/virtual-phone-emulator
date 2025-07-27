@@ -17,9 +17,11 @@ def setup_logging(level=logging.INFO):
         handlers=[
             logging.FileHandler("virtual_phone.log"),
             logging.StreamHandler()
-        ]
+        ],
     )
 
+
+"""主函数"""
 
 def main():
     """主函数"""
@@ -29,18 +31,26 @@ def main():
     args = parser.parse_args()
 
     # 设置日志级别
-    log_level = logging.DEBUG if args.verbose else logging.INFO
+    if args.verbose:
+        log_level = logging.DEBUG
+    else:
+        # 设置为CRITICAL，停止所有日志输出
+        log_level = logging.CRITICAL
+
     setup_logging(log_level)
 
     # 选择界面类型
+    from src.ext.ui.console_ui import ConsoleUI
+    from src.ext.ui.gui_ui import GUIUI
+
     if args.gui:
         # 运行图形界面
-        run_gui()
+        ui = GUIUI()
+        ui.show()
     else:
         # 运行控制台界面
         ui = ConsoleUI()
         ui.start()
-
 
 if __name__ == "__main__":
     main()
