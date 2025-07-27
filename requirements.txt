@@ -1,15 +1,15 @@
 # 基础依赖
-opencv-python>=4.5.5  # 用于摄像头模拟和图像处理
-pyjnius>=1.4.1        # 用于Java集成（APK解析）
-numpy>=1.22.3         # 数值计算
-PyQt5>=5.15.6         # 图形界面
-pycryptodome>=3.17    # APK签名验证
-requests>=2.28.1      # 网络请求（模拟网络功能）
-packaging>=21.3       # 版本解析
-psutil>=5.9.0         # 系统资源监控
+opencv-python>=4.5.5
+pyjnius>=1.4.1
+numpy>=1.22.3
+PyQt5>=5.15.6
+pycryptodome>=3.17
+requests>=2.28.1
+packaging>=21.3
+psutil>=5.9.0
 pyaudio>=0.2.14
 # 开发工具
-pytest>=7.1.2         # 测试框架
-flake8>=4.0.1         # 代码检查
-black>=22.3.0         # 代码格式化
-isort>=5.10.1         # 导入排序
+pytest>=7.1.2
+flake8>=4.0.1
+black>=22.3.0
+isort>=5.10.1
