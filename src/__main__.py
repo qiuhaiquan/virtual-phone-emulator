@@ -1,9 +1,14 @@
 # src/__main__.py
 import argparse
+import atexit
 import logging
 from ext.ui.console_ui import ConsoleUI
 import os
 import sys
+
+from src.config import Config
+from src.core.hardware.abstraction import HardwareAbstractionLayer
+
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
 
@@ -28,6 +33,9 @@ def main():
     parser.add_argument('-v', '--verbose', action='store_true', help='启用详细日志')
     parser.add_argument('-g', '--gui', action='store_true', help='使用图形界面')
     args = parser.parse_args()
+    config = Config().to_dict()
+    hardware = HardwareAbstractionLayer(config)
+    atexit.register(hardware.cleanup)
 
     # 设置日志级别
     if args.verbose:

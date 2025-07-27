@@ -150,14 +150,19 @@ class HardwareDetector:
         """检测音频设备"""
         try:
             if self.os == "Windows":
-                # 使用 PowerShell 命令获取音频设备信息
-                output = subprocess.check_output(["powershell", "Get-WmiObject -Class Win32_SoundDevice | Select-Object -ExpandProperty Name"], shell=False).decode()
-                self.detected_hardware["audio"] = output.strip()
+                # Windows 下 wmic 输出为 GBK 编码
+                output = subprocess.check_output(
+                    "wmic path win32_SoundDevice get Name",
+                    shell=True
+                ).decode('gbk', errors='ignore')
+                # 提取有效行（忽略空行和标题）
+                lines = [line.strip() for line in output.splitlines() if line.strip()]
+                self.detected_hardware["audio"] = lines[-1] if lines else "未知"
             elif self.os == "Linux":
-                output = subprocess.check_output("aplay -l", shell=True).decode()
-                self.detected_hardware["audio"] = bool(output.strip())
+                output = subprocess.check_output("aplay -l", shell=True).decode('utf-8', errors='ignore')
+                self.detected_hardware["audio"] = "存在" if output.strip() else "未知"
             elif self.os == "Darwin":
-                output = subprocess.check_output("system_profiler SPAudioDataType", shell=True).decode()
+                output = subprocess.check_output("system_profiler SPAudioDataType", shell=True).decode('utf-8', errors='ignore')
                 self.detected_hardware["audio"] = output.strip()
         except Exception as e:
             logger.error(f"检测音频设备失败: {e}")
@@ -167,14 +172,16 @@ class HardwareDetector:
         """检测网络设备信息"""
         try:
             if self.os == "Windows":
-                output = subprocess.check_output("ipconfig /all", shell=True).decode()
-                self.detected_hardware["network"] = output.strip()
+                output = subprocess.check_output("ipconfig /all", shell=True)
+                output = output.decode('gbk', errors='ignore')  # Windows默认编码
             elif self.os == "Linux":
-                output = subprocess.check_output("ifconfig", shell=True).decode()
-                self.detected_hardware["network"] = output.strip()
-            elif self.os == "Darwin":
-                output = subprocess.check_output("ifconfig", shell=True).decode()
-                self.detected_hardware["network"] = output.strip()
+                output = subprocess.check_output("ip addr show", shell=True)
+                output = output.decode('utf-8', errors='ignore')
+            else:  # macOS
+                output = subprocess.check_output("ifconfig", shell=True)
+                output = output.decode('utf-8', errors='ignore')
+
+            self.detected_hardware["network"] = output.strip()
         except Exception as e:
             logger.error(f"检测网络失败: {e}")
             self.detected_hardware["network"] = "未知"

@@ -1,4 +1,4 @@
-# src/core/apk/python_apk_loader.py
+﻿# src/core/apk/python_apk_loader.py
 import os
 import zipfile
 import logging

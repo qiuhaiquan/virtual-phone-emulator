@@ -8,6 +8,8 @@ import time
 from typing import Dict, Any, Optional
 from .detector import HardwareDetector
 from .virtual_storage import VirtualStorage
+from .physical_storage import PhysicalStorage
+
 
 logger = logging.getLogger(__name__)
 
@@ -22,14 +24,7 @@ class HardwareAbstractionLayer:
         self.virtual_gps = None
         self.virtual_storage = None
         self.virtual_network = None
-
-    def initialize_virtual_devices(self) -> None:
-        """初始化所有虚拟硬件设备"""
-        self._initialize_virtual_camera()
-        self._initialize_virtual_microphone()
-        self._initialize_virtual_gps()
-        self._initialize_virtual_storage()
-        self._initialize_virtual_network()
+        self.storage = PhysicalStorage(drive_letter="G")
 
     def _initialize_virtual_camera(self):
         try:
@@ -131,7 +126,7 @@ class HardwareAbstractionLayer:
             def simulate_network():
                 while True:
                     # 模拟网络延迟
-                    delay = random.uniform(0.1, 1)
+                    delay = random.uniform(0, 1)
                     time.sleep(delay)
                     # 模拟丢包率
                     if random.random() < 0.1:
@@ -151,3 +146,28 @@ class HardwareAbstractionLayer:
     def get_storage(self):
         """获取虚拟存储设备"""
         return self.virtual_storage
+
+    def initialize_virtual_devices(self) -> None:
+        """初始化所有虚拟硬件设备"""
+        # 不再需要初始化虚拟存储
+        self._initialize_virtual_camera()
+        self._initialize_virtual_microphone()
+        self._initialize_virtual_gps()
+        self._initialize_virtual_network()
+
+    # 文件操作方法映射到物理存储
+    def create_file(self, path: str, content: str) -> bool:
+        return self.storage.create_file(path, content)
+
+    def list_files(self) -> list:
+        return self.storage.list_files()
+
+    def read_file(self, path: str) -> str:
+        return self.storage.read_file(path)
+
+    def delete_file(self, path: str) -> bool:
+        return self.storage.delete_file(path)
+
+    # 程序退出时卸载盘符
+    def cleanup(self) -> None:
+        self.storage.unmount_drive()
