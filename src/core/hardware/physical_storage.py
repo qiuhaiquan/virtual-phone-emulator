@@ -1,3 +1,4 @@
+#
 # src/core/hardware/physical_storage.py
 import os
 import platform
@@ -12,7 +13,7 @@ class PhysicalStorage:
         self.os = platform.system()
         self.drive_letter = drive_letter.upper()
 
-        # ¿çÆ½Ì¨Ä¬ÈÏ´æ´¢Â·¾¶
+        # è·¨å¹³å°é»˜è®¤å­˜å‚¨è·¯å¾„
         if not root_path:
             if self.os == "Windows":
                 root_path = os.path.join(os.environ["TEMP"], "virtual_phone_storage")
@@ -23,14 +24,14 @@ class PhysicalStorage:
 
         self.root_path = root_path
         os.makedirs(self.root_path, exist_ok=True)
-        logger.info(f"ÎïÀí´æ´¢Â·¾¶: {self.root_path}")
+        logger.info(f"ç‰©ç†å­˜å‚¨è·¯å¾„: {self.root_path}")
 
-        # ½öÔÚWindowsÉÏ³¢ÊÔ¹ÒÔØÅÌ·û
+        # ä»…åœ¨Windowsä¸Šå°è¯•æŒ‚è½½ç›˜ç¬¦
         if self.os == "Windows":
             self._mount_as_drive()
 
     def _mount_as_drive(self) -> bool:
-        """¸ù¾İ²Ù×÷ÏµÍ³Ñ¡Ôñ¹ÒÔØ·½Ê½"""
+        """æ ¹æ®æ“ä½œç³»ç»Ÿé€‰æ‹©æŒ‚è½½æ–¹å¼"""
         if self.os == "Windows":
             return self._mount_windows_drive()
         elif self.os == "Linux":
@@ -39,11 +40,11 @@ class PhysicalStorage:
             return self._mount_macos_drive()
 
     def _mount_windows_drive(self) -> bool:
-        """ÔÚWindowsÉÏ¹ÒÔØÄ¿Â¼ÎªĞéÄâÇı¶¯Æ÷"""
+        """åœ¨Windowsä¸ŠæŒ‚è½½ç›®å½•ä¸ºè™šæ‹Ÿé©±åŠ¨å™¨"""
         try:
-            # ¼ì²éÅÌ·ûÊÇ·ñÒÑ±»Ê¹ÓÃ
+            # æ£€æŸ¥ç›˜ç¬¦æ˜¯å¦å·²è¢«ä½¿ç”¨
             if os.system(f"if exist {self.drive_letter}:\\ echo exists") == 0:
-                logger.warning(f"ÅÌ·û {self.drive_letter}: ÒÑ±»Ê¹ÓÃ£¬ÎŞ·¨¹ÒÔØ")
+                logger.warning(f"ç›˜ç¬¦ {self.drive_letter}: å·²è¢«ä½¿ç”¨ï¼Œæ— æ³•æŒ‚è½½")
                 return False
 
             subprocess.run(
@@ -53,50 +54,50 @@ class PhysicalStorage:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE
             )
-            logger.info(f"³É¹¦½« {self.root_path} ¹ÒÔØÎª {self.drive_letter}:")
+            logger.info(f"æˆåŠŸå°† {self.root_path} æŒ‚è½½ä¸º {self.drive_letter}:")
             return True
         except Exception as e:
-            logger.error(f"¹ÒÔØÅÌ·ûÊ§°Ü: {e}")
+            logger.error(f"æŒ‚è½½ç›˜ç¬¦å¤±è´¥: {e}")
             return False
 
     def _mount_linux_drive(self) -> bool:
-        """ÔÚLinuxÉÏ´´½¨¹ÒÔØµã£¨Ê¹ÓÃ·ûºÅÁ´½ÓÄ£Äâ£©"""
+        """åœ¨Linuxä¸Šåˆ›å»ºæŒ‚è½½ç‚¹ï¼ˆä½¿ç”¨ç¬¦å·é“¾æ¥æ¨¡æ‹Ÿï¼‰"""
         try:
-            # ´´½¨ÓÃ»§Ö÷Ä¿Â¼ÏÂµÄÁ´½Ó
+            # åˆ›å»ºç”¨æˆ·ä¸»ç›®å½•ä¸‹çš„é“¾æ¥
             link_path = os.path.join(os.path.expanduser("~"), "virtual_phone_drive")
             if os.path.exists(link_path):
                 if not os.path.islink(link_path):
-                    logger.warning(f"{link_path} ÒÑ´æÔÚÇÒ²»ÊÇ·ûºÅÁ´½Ó")
+                    logger.warning(f"{link_path} å·²å­˜åœ¨ä¸”ä¸æ˜¯ç¬¦å·é“¾æ¥")
                     return False
                 os.unlink(link_path)
 
             os.symlink(self.root_path, link_path)
-            logger.info(f"ÒÑÔÚ {link_path} ´´½¨Ö¸Ïò {self.root_path} µÄ·ûºÅÁ´½Ó")
+            logger.info(f"å·²åœ¨ {link_path} åˆ›å»ºæŒ‡å‘ {self.root_path} çš„ç¬¦å·é“¾æ¥")
             return True
         except Exception as e:
-            logger.error(f"´´½¨·ûºÅÁ´½ÓÊ§°Ü: {e}")
+            logger.error(f"åˆ›å»ºç¬¦å·é“¾æ¥å¤±è´¥: {e}")
             return False
 
     def _mount_macos_drive(self) -> bool:
-        """ÔÚmacOSÉÏ´´½¨¹ÒÔØµã£¨Ê¹ÓÃ·ûºÅÁ´½ÓÄ£Äâ£©"""
+        """åœ¨macOSä¸Šåˆ›å»ºæŒ‚è½½ç‚¹ï¼ˆä½¿ç”¨ç¬¦å·é“¾æ¥æ¨¡æ‹Ÿï¼‰"""
         try:
-            # ´´½¨ÓÃ»§Ö÷Ä¿Â¼ÏÂµÄÁ´½Ó
+            # åˆ›å»ºç”¨æˆ·ä¸»ç›®å½•ä¸‹çš„é“¾æ¥
             link_path = os.path.join(os.path.expanduser("~"), "virtual_phone_drive")
             if os.path.exists(link_path):
                 if not os.path.islink(link_path):
-                    logger.warning(f"{link_path} ÒÑ´æÔÚÇÒ²»ÊÇ·ûºÅÁ´½Ó")
+                    logger.warning(f"{link_path} å·²å­˜åœ¨ä¸”ä¸æ˜¯ç¬¦å·é“¾æ¥")
                     return False
                 os.unlink(link_path)
 
             os.symlink(self.root_path, link_path)
-            logger.info(f"ÒÑÔÚ {link_path} ´´½¨Ö¸Ïò {self.root_path} µÄ·ûºÅÁ´½Ó")
+            logger.info(f"å·²åœ¨ {link_path} åˆ›å»ºæŒ‡å‘ {self.root_path} çš„ç¬¦å·é“¾æ¥")
             return True
         except Exception as e:
-            logger.error(f"´´½¨·ûºÅÁ´½ÓÊ§°Ü: {e}")
+            logger.error(f"åˆ›å»ºç¬¦å·é“¾æ¥å¤±è´¥: {e}")
             return False
 
     def unmount_drive(self) -> bool:
-        """¸ù¾İ²Ù×÷ÏµÍ³Ğ¶ÔØ¹ÒÔØµã"""
+        """æ ¹æ®æ“ä½œç³»ç»Ÿå¸è½½æŒ‚è½½ç‚¹"""
         if self.os == "Windows":
             return self._unmount_windows_drive()
         elif self.os == "Linux":
@@ -105,7 +106,7 @@ class PhysicalStorage:
             return self._unmount_macos_drive()
 
     def _unmount_windows_drive(self) -> bool:
-        """Ğ¶ÔØWindowsĞéÄâÇı¶¯Æ÷"""
+        """å¸è½½Windowsè™šæ‹Ÿé©±åŠ¨å™¨"""
         try:
             subprocess.run(
                 f"subst {self.drive_letter}: /D",
@@ -114,72 +115,72 @@ class PhysicalStorage:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE
             )
-            logger.info(f"³É¹¦Ğ¶ÔØÅÌ·û {self.drive_letter}:")
+            logger.info(f"æˆåŠŸå¸è½½ç›˜ç¬¦ {self.drive_letter}:")
             return True
         except Exception as e:
-            logger.error(f"Ğ¶ÔØÅÌ·ûÊ§°Ü: {e}")
+            logger.error(f"å¸è½½ç›˜ç¬¦å¤±è´¥: {e}")
             return False
 
     def _unmount_linux_drive(self) -> bool:
-        """É¾³ıLinux·ûºÅÁ´½Ó"""
+        """åˆ é™¤Linuxç¬¦å·é“¾æ¥"""
         try:
             link_path = os.path.join(os.path.expanduser("~"), "virtual_phone_drive")
             if os.path.islink(link_path):
                 os.unlink(link_path)
-                logger.info(f"ÒÑÉ¾³ı·ûºÅÁ´½Ó {link_path}")
+                logger.info(f"å·²åˆ é™¤ç¬¦å·é“¾æ¥ {link_path}")
             return True
         except Exception as e:
-            logger.error(f"É¾³ı·ûºÅÁ´½ÓÊ§°Ü: {e}")
+            logger.error(f"åˆ é™¤ç¬¦å·é“¾æ¥å¤±è´¥: {e}")
             return False
 
     def _unmount_macos_drive(self) -> bool:
-        """É¾³ımacOS·ûºÅÁ´½Ó"""
-        return self._unmount_linux_drive()  # ÓëLinuxÊµÏÖÏàÍ¬
+        """åˆ é™¤macOSç¬¦å·é“¾æ¥"""
+        return self._unmount_linux_drive()  # ä¸Linuxå®ç°ç›¸åŒ
 
     def create_file(self, path: str, content: str) -> bool:
-        """´´½¨ÎÄ¼ş"""
+        """åˆ›å»ºæ–‡ä»¶"""
         try:
             full_path = os.path.join(self.root_path, path)
             os.makedirs(os.path.dirname(full_path), exist_ok=True)
             with open(full_path, "w", encoding="utf-8") as f:
                 f.write(content)
-            logger.info(f"ÎÄ¼ş´´½¨³É¹¦: {full_path}")
+            logger.info(f"æ–‡ä»¶åˆ›å»ºæˆåŠŸ: {full_path}")
             return True
         except Exception as e:
-            logger.error(f"´´½¨ÎÄ¼şÊ§°Ü {path}: {e}")
+            logger.error(f"åˆ›å»ºæ–‡ä»¶å¤±è´¥ {path}: {e}")
             return False
 
     def read_file(self, path: str) -> str:
-        """¶ÁÈ¡ÎÄ¼ş"""
+        """è¯»å–æ–‡ä»¶"""
         try:
             full_path = os.path.join(self.root_path, path)
             with open(full_path, "r", encoding="utf-8") as f:
                 return f.read()
         except Exception as e:
-            logger.error(f"¶ÁÈ¡ÎÄ¼şÊ§°Ü {path}: {e}")
+            logger.error(f"è¯»å–æ–‡ä»¶å¤±è´¥ {path}: {e}")
             return None
 
     def list_files(self, directory: str = "") -> list:
-        """ÁĞ³öÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼şºÍÎÄ¼ş¼Ğ"""
+        """åˆ—å‡ºç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶å’Œæ–‡ä»¶å¤¹"""
         try:
             full_path = os.path.join(self.root_path, directory)
             if not os.path.exists(full_path):
                 return []
             return os.listdir(full_path)
         except Exception as e:
-            logger.error(f"ÁĞ³öÎÄ¼şÊ§°Ü: {e}")
+            logger.error(f"åˆ—å‡ºæ–‡ä»¶å¤±è´¥: {e}")
             return []
 
     def delete_file(self, path: str) -> bool:
-        """É¾³ıÎÄ¼ş"""
+        """åˆ é™¤æ–‡ä»¶"""
         try:
             full_path = os.path.join(self.root_path, path)
             if os.path.isfile(full_path):
                 os.remove(full_path)
-                logger.info(f"ÎÄ¼şÉ¾³ı³É¹¦: {full_path}")
+                logger.info(f"æ–‡ä»¶åˆ é™¤æˆåŠŸ: {full_path}")
                 return True
-            logger.warning(f"ÎÄ¼ş²»´æÔÚ: {full_path}")
+            logger.warning(f"æ–‡ä»¶ä¸å­˜åœ¨: {full_path}")
             return False
         except Exception as e:
-            logger.error(f"É¾³ıÎÄ¼şÊ§°Ü {path}: {e}")
+            logger.error(f"åˆ é™¤æ–‡ä»¶å¤±è´¥ {path}: {e}")
             return False

@@ -1,4 +1,5 @@
 # src/config.py
+# -*- coding: utf-8 -*-
 import os
 import platform
 from configparser import ConfigParser
@@ -9,12 +10,12 @@ class Config:
     def __init__(self, config_file=None):
         self.config = ConfigParser()
 
-        # Ä¬ÈÏÅäÖÃ
+        # é»˜è®¤é…ç½®
         self.os = platform.system()
         self.default_config = {
             "storage": {
                 "root_path": "",
-                "windows_drive_letter": "G",
+                "windows_drive_letter": "A",
                 "linux_mount_point": os.path.join(os.path.expanduser("~"), "virtual_phone_drive"),
                 "macos_mount_point": os.path.join(os.path.expanduser("~"), "virtual_phone_drive")
             },
@@ -23,15 +24,15 @@ class Config:
             }
         }
 
-        # ¼ÓÔØÅäÖÃÎÄ¼ş£¨Èç¹û´æÔÚ£©
+        # åŠ è½½é…ç½®æ–‡ä»¶ï¼ˆå¦‚æœå­˜åœ¨ï¼‰
         if config_file and os.path.exists(config_file):
             self.config.read(config_file)
         else:
-            # Ê¹ÓÃÄ¬ÈÏÅäÖÃ
+            # ä½¿ç”¨é»˜è®¤é…ç½®
             self.config.read_dict(self.default_config)
 
     def get_storage_path(self) -> str:
-        """»ñÈ¡´æ´¢Â·¾¶£¨¸ù¾İ²Ù×÷ÏµÍ³£©"""
+        """è·å–å­˜å‚¨è·¯å¾„ï¼ˆæ ¹æ®æ“ä½œç³»ç»Ÿï¼‰"""
         path = self.config.get("storage", "root_path", fallback="")
         if not path:
             if self.os == "Windows":
@@ -43,11 +44,11 @@ class Config:
         return path
 
     def get_drive_letter(self) -> str:
-        """»ñÈ¡WindowsÅÌ·û"""
+        """è·å–Windowsç›˜ç¬¦"""
         return self.config.get("storage", "windows_drive_letter", fallback="G")
 
     def to_dict(self) -> dict[str, Any]:
-        """½«ÅäÖÃ×ª»»Îª×Öµä"""
+        """å°†é…ç½®è½¬æ¢ä¸ºå­—å…¸"""
         config_dict = {}
         for section in self.config.sections():
             config_dict[section] = dict(self.config.items(section))
@@ -63,10 +64,10 @@ class Config:
         def __init__(self, config_file: Optional[str] = None):
             self.config = ConfigParser()
 
-            # ÏµÍ³ĞÅÏ¢
+            # ç³»ç»Ÿä¿¡æ¯
             self.os = platform.system()
 
-            # Ä¬ÈÏÅäÖÃ
+            # é»˜è®¤é…ç½®
             self.default_config = {
                 "storage": {
                     "root_path": "",
@@ -90,10 +91,10 @@ class Config:
                 }
             }
 
-            # ¼ÓÔØÅäÖÃÎÄ¼ş£¨Èç¹û´æÔÚ£©
+            # åŠ è½½é…ç½®æ–‡ä»¶ï¼ˆå¦‚æœå­˜åœ¨ï¼‰
             if config_file and os.path.exists(config_file):
                 self.config.read(config_file)
-                # ºÏ²¢Ä¬ÈÏÅäÖÃ£¨È·±£ËùÓĞ¼ü¶¼´æÔÚ£©
+                # åˆå¹¶é»˜è®¤é…ç½®ï¼ˆç¡®ä¿æ‰€æœ‰é”®éƒ½å­˜åœ¨ï¼‰
                 for section, values in self.default_config.items():
                     if not self.config.has_section(section):
                         self.config.add_section(section)
@@ -101,11 +102,11 @@ class Config:
                         if not self.config.has_option(section, key):
                             self.config.set(section, key, str(value))
             else:
-                # Ê¹ÓÃÄ¬ÈÏÅäÖÃ
+                # ä½¿ç”¨é»˜è®¤é…ç½®
                 self.config.read_dict(self.default_config)
 
         def get_storage_path(self) -> str:
-            """»ñÈ¡´æ´¢Â·¾¶£¨¸ù¾İ²Ù×÷ÏµÍ³£©"""
+            """è·å–å­˜å‚¨è·¯å¾„ï¼ˆæ ¹æ®æ“ä½œç³»ç»Ÿï¼‰"""
             path = self.config.get("storage", "root_path", fallback="")
             if not path:
                 if self.os == "Windows":
@@ -117,47 +118,47 @@ class Config:
             return path
 
         def get_drive_letter(self) -> str:
-            """»ñÈ¡WindowsÅÌ·û"""
+            """è·å–Windowsç›˜ç¬¦"""
             return self.config.get("storage", "windows_drive_letter", fallback="G")
 
         def get_log_level(self) -> str:
-            """»ñÈ¡ÈÕÖ¾¼¶±ğ"""
+            """è·å–æ—¥å¿—çº§åˆ«"""
             return self.config.get("logging", "level", fallback="INFO").upper()
 
         def get_log_file(self) -> str:
-            """»ñÈ¡ÈÕÖ¾ÎÄ¼şÂ·¾¶"""
+            """è·å–æ—¥å¿—æ–‡ä»¶è·¯å¾„"""
             return self.config.get("logging", "log_file", fallback="virtual_phone.log")
 
         def is_network_emulation_enabled(self) -> bool:
-            """¼ì²éÊÇ·ñÆôÓÃÍøÂçÄ£Äâ"""
+            """æ£€æŸ¥æ˜¯å¦å¯ç”¨ç½‘ç»œæ¨¡æ‹Ÿ"""
             return self.config.getboolean("hardware", "enable_network_emulation", fallback=True)
 
         def get_packet_loss_rate(self) -> float:
-            """»ñÈ¡ÍøÂç¶ª°üÂÊ"""
+            """è·å–ç½‘ç»œä¸¢åŒ…ç‡"""
             return self.config.getfloat("hardware", "packet_loss_rate", fallback=0.1)
 
         def get_latency_ms(self) -> int:
-            """»ñÈ¡ÍøÂçÑÓ³Ù£¨ºÁÃë£©"""
+            """è·å–ç½‘ç»œå»¶è¿Ÿï¼ˆæ¯«ç§’ï¼‰"""
             return self.config.getint("hardware", "latency_ms", fallback=50)
 
         def get_ui_theme(self) -> str:
-            """»ñÈ¡UIÖ÷Ìâ"""
+            """è·å–UIä¸»é¢˜"""
             return self.config.get("ui", "theme", fallback="light")
 
         def get_window_size(self) -> Dict[str, int]:
-            """»ñÈ¡´°¿Ú³ß´ç"""
+            """è·å–çª—å£å°ºå¯¸"""
             return {
                 "width": self.config.getint("ui", "window_width", fallback=800),
                 "height": self.config.getint("ui", "window_height", fallback=600)
             }
 
         def to_dict(self) -> Dict[str, Dict[str, Any]]:
-            """½«ÅäÖÃ×ª»»Îª×Öµä"""
+            """å°†é…ç½®è½¬æ¢ä¸ºå­—å…¸"""
             config_dict = {}
             for section in self.config.sections():
                 config_dict[section] = dict(self.config.items(section))
 
-                # ×ª»»²¼¶ûÖµºÍÊıÖµÀàĞÍ
+                # è½¬æ¢å¸ƒå°”å€¼å’Œæ•°å€¼ç±»å‹
                 for key, value in config_dict[section].items():
                     if value.lower() == "true":
                         config_dict[section][key] = True
@@ -171,6 +172,6 @@ class Config:
             return config_dict
 
         def save(self, config_file: str) -> None:
-            """±£´æÅäÖÃµ½ÎÄ¼ş"""
+            """ä¿å­˜é…ç½®åˆ°æ–‡ä»¶"""
             with open(config_file, 'w') as f:
                 self.config.write(f)

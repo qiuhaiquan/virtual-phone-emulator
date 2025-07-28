@@ -151,13 +151,30 @@ class HardwareDetector:
         try:
             if self.os == "Windows":
                 # Windows 下 wmic 输出为 GBK 编码
-                output = subprocess.check_output(
-                    "wmic path win32_SoundDevice get Name",
-                    shell=True
-                ).decode('gbk', errors='ignore')
-                # 提取有效行（忽略空行和标题）
-                lines = [line.strip() for line in output.splitlines() if line.strip()]
-                self.detected_hardware["audio"] = lines[-1] if lines else "未知"
+                try:
+                    # 使用 PowerShell 获取音频设备信息
+                    output = subprocess.check_output(
+                        [
+                            "powershell",
+                            "-Command",
+                            "(Get-CimInstance -ClassName Win32_SoundDevice).Name"
+                        ],
+                        shell=False,  # 使用 shell=False 更安全
+                        stderr=subprocess.STDOUT  # 捕获错误输出
+                    ).decode('gbk', errors='ignore')
+
+                    # 提取有效行（忽略空行）
+                    lines = [line.strip() for line in output.splitlines() if line.strip()]
+                    self.detected_hardware["audio"] = lines[0] if lines else "未知"
+
+                except subprocess.CalledProcessError as e:
+                    # 处理命令执行失败的情况
+                    logger.error(f"检测音频设备失败: {e.output.decode('gbk', errors='ignore')}")
+                    self.detected_hardware["audio"] = "未知"
+                except Exception as e:
+                    # 处理其他异常
+                    logger.error(f"检测音频设备时发生未知错误: {e}")
+                    self.detected_hardware["audio"] = "未知"
             elif self.os == "Linux":
                 output = subprocess.check_output("aplay -l", shell=True).decode('utf-8', errors='ignore')
                 self.detected_hardware["audio"] = "存在" if output.strip() else "未知"

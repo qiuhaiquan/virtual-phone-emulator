@@ -1653,3 +1653,6 @@
 2025-07-27 20:01:21,925 - src.core.hardware.abstraction - WARNING - 模拟网络丢包
 2025-07-27 20:01:26,026 - src.core.hardware.abstraction - WARNING - 模拟网络丢包
 2025-07-27 20:01:33,254 - src.core.hardware.abstraction - WARNING - 模拟网络丢包
+2025-07-28 21:52:46,237 - src.core.hardware.detector - ERROR - 检测音频设备失败: Command 'wmic path win32_SoundDevice get Name' returned non-zero exit status 1.
+2025-07-28 21:52:46,305 - src.core.hardware.physical_storage - WARNING - 盘符 G: 已被使用，无法挂载
+2025-07-28 21:57:23,592 - src.core.hardware.physical_storage - ERROR - 卸载盘符失败: Command 'subst G: /D' returned non-zero exit status 1.
