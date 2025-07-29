@@ -1,8 +1,8 @@
 # android_libs/graphics/drawable.py
+# -*- coding: utf-8 -*-
 import logging
 
 logger = logging.getLogger(__name__)
-
 class Drawable:
     """模拟 android.graphics.drawable.Drawable 类"""
 
