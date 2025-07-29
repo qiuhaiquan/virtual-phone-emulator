@@ -1,6 +1,6 @@
 # src/ui/console_ui.py
 import logging
-from core import VirtualPhone
+from ...core import VirtualPhone
 
 logger = logging.getLogger(__name__)
 

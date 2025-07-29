@@ -1,4 +1,5 @@
 # src/core/graphics/opengl.py
+# -*- coding: utf-8 -*-
 import logging
 from OpenGL import GL, GLU
 from PyQt5.QtOpenGL import QGLWidget
@@ -7,32 +8,32 @@ logger = logging.getLogger(__name__)
 
 
 class OpenGLRenderer(QGLWidget):
-    """OpenGL ESµÄÄ£ÄâÊµÏÖ"""
+    """OpenGL ESçš„æ¨¡æ‹Ÿå®ç°"""
 
     def __init__(self, parent=None):
         super().__init__(parent)
         self.context = None
 
     def initializeGL(self):
-        """³õÊ¼»¯OpenGL»·¾³"""
+        """åˆå§‹åŒ–OpenGLç¯å¢ƒ"""
         GL.glClearColor(0.0, 0.0, 0.0, 1.0)
         GL.glEnable(GL.GL_DEPTH_TEST)
-        logger.info("OpenGL»·¾³³õÊ¼»¯Íê³É")
+        logger.info("OpenGLç¯å¢ƒåˆå§‹åŒ–å®Œæˆ")
 
     def resizeGL(self, width, height):
-        """µ÷ÕûÊÓ¿Ú´óĞ¡"""
+        """è°ƒæ•´è§†å£å¤§å°"""
         GL.glViewport(0, 0, width, height)
         GL.glMatrixMode(GL.GL_PROJECTION)
         GL.glLoadIdentity()
         GLU.gluPerspective(45.0, width / height, 0.1, 100.0)
         GL.glMatrixMode(GL.GL_MODELVIEW)
-        logger.info(f"OpenGLÊÓ¿Úµ÷ÕûÎª: {width}x{height}")
+        logger.info(f"OpenGLè§†å£è°ƒæ•´ä¸º: {width}x{height}")
 
     def paintGL(self):
-        """»æÖÆ³¡¾°"""
+        """ç»˜åˆ¶åœºæ™¯"""
         GL.glClear(GL.GL_COLOR_BUFFER_BIT | GL.GL_DEPTH_BUFFER_BIT)
-        # ÕâÀï»áÖ´ĞĞÊµ¼ÊµÄOpenGL»æÖÆÃüÁî
-        # ¼ò»¯°æÊµÏÖ£¬½ö»æÖÆÒ»¸ö²ÊÉ«Èı½ÇĞÎ
+        # è¿™é‡Œä¼šæ‰§è¡Œå®é™…çš„OpenGLç»˜åˆ¶å‘½ä»¤
+        # ç®€åŒ–ç‰ˆå®ç°ï¼Œä»…ç»˜åˆ¶ä¸€ä¸ªå½©è‰²ä¸‰è§’å½¢
         GL.glLoadIdentity()
         GL.glTranslatef(-1.5, 0.0, -6.0)
         GL.glBegin(GL.GL_TRIANGLES)
@@ -45,11 +46,11 @@ class OpenGLRenderer(QGLWidget):
         GL.glEnd()
 
     def create_context(self):
-        """´´½¨OpenGLÉÏÏÂÎÄ"""
-        # ÔÚÊµ¼ÊÊµÏÖÖĞ£¬»á´¦ÀíÉÏÏÂÎÄ´´½¨ºÍ¹ÜÀí
+        """åˆ›å»ºOpenGLä¸Šä¸‹æ–‡"""
+        # åœ¨å®é™…å®ç°ä¸­ï¼Œä¼šå¤„ç†ä¸Šä¸‹æ–‡åˆ›å»ºå’Œç®¡ç†
         self.context = self.context()
-        logger.info("´´½¨OpenGLÉÏÏÂÎÄ")
+        logger.info("åˆ›å»ºOpenGLä¸Šä¸‹æ–‡")
         return self.context
 
-    # ÕâÀï¿ÉÒÔÌí¼Ó¸ü¶àOpenGL ES APIµÄÄ£ÄâÊµÏÖ
-    # ÀıÈç: glCreateShader, glCompileShader, glLinkProgramµÈ
+    # è¿™é‡Œå¯ä»¥æ·»åŠ æ›´å¤šOpenGL ES APIçš„æ¨¡æ‹Ÿå®ç°
+    # ä¾‹å¦‚: glCreateShader, glCompileShader, glLinkProgramç­‰

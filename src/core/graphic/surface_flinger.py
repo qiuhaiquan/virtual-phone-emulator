@@ -1,4 +1,5 @@
 # src/core/graphics/surface_flinger.py
+# -*- coding: utf-8 -*-
 import logging
 from PIL import Image, ImageDraw
 
@@ -6,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 class Surface:
-    """±íÊ¾Ò»¸öÍ¼ĞÎ±íÃæ"""
+    """è¡¨ç¤ºä¸€ä¸ªå›¾å½¢è¡¨é¢"""
 
     def __init__(self, width: int, height: int, format: str = "RGBA"):
         self.width = width
@@ -16,43 +17,43 @@ class Surface:
         self.draw = ImageDraw.Draw(self.image)
 
     def clear(self, color: tuple = (0, 0, 0, 0)) -> None:
-        """Çå³ı±íÃæÄÚÈİ"""
+        """æ¸…é™¤è¡¨é¢å†…å®¹"""
         self.draw.rectangle((0, 0, self.width, self.height), fill=color)
 
     def get_image(self) -> Image:
-        """»ñÈ¡±íÃæÍ¼Ïñ"""
+        """è·å–è¡¨é¢å›¾åƒ"""
         return self.image
 
 
 class SurfaceFlinger:
-    """Android SurfaceFlingerµÄÄ£ÄâÊµÏÖ"""
+    """Android SurfaceFlingerçš„æ¨¡æ‹Ÿå®ç°"""
 
     def __init__(self, hardware_abstraction):
         self.hardware_abstraction = hardware_abstraction
-        self.surfaces = {}  # ´æ´¢ËùÓĞ×¢²áµÄsurface
+        self.surfaces = {}  # å­˜å‚¨æ‰€æœ‰æ³¨å†Œçš„surface
         self.display_surface = None
 
     def create_surface(self, name: str, width: int, height: int) -> Surface:
-        """´´½¨Ò»¸öĞÂµÄsurface"""
+        """åˆ›å»ºä¸€ä¸ªæ–°çš„surface"""
         surface = Surface(width, height)
         self.surfaces[name] = surface
-        logger.info(f"´´½¨Surface: {name} ({width}x{height})")
+        logger.info(f"åˆ›å»ºSurface: {name} ({width}x{height})")
         return surface
 
     def set_display_surface(self, name: str) -> None:
-        """ÉèÖÃÒªÏÔÊ¾µÄsurface"""
+        """è®¾ç½®è¦æ˜¾ç¤ºçš„surface"""
         if name in self.surfaces:
             self.display_surface = self.surfaces[name]
-            logger.info(f"ÉèÖÃÏÔÊ¾Surface: {name}")
+            logger.info(f"è®¾ç½®æ˜¾ç¤ºSurface: {name}")
         else:
-            logger.error(f"Surface²»´æÔÚ: {name}")
+            logger.error(f"Surfaceä¸å­˜åœ¨: {name}")
 
     def composite(self) -> None:
-        """Ö´ĞĞºÏ³É²Ù×÷£¬½«ËùÓĞsurfaceºÏ²¢µ½ÏÔÊ¾±íÃæ"""
+        """æ‰§è¡Œåˆæˆæ“ä½œï¼Œå°†æ‰€æœ‰surfaceåˆå¹¶åˆ°æ˜¾ç¤ºè¡¨é¢"""
         if not self.display_surface:
-            logger.warning("Ã»ÓĞÉèÖÃÏÔÊ¾Surface")
+            logger.warning("æ²¡æœ‰è®¾ç½®æ˜¾ç¤ºSurface")
             return
 
-        # ÔÚÊµ¼ÊÊµÏÖÖĞ£¬ÕâÀï»á´¦Àí¶à¸ösurfaceµÄºÏ³É
-        # ¼ò»¯°æÊµÏÖ£¬½ö¸üĞÂÏÔÊ¾
+        # åœ¨å®é™…å®ç°ä¸­ï¼Œè¿™é‡Œä¼šå¤„ç†å¤šä¸ªsurfaceçš„åˆæˆ
+        # ç®€åŒ–ç‰ˆå®ç°ï¼Œä»…æ›´æ–°æ˜¾ç¤º
         self.hardware_abstraction.display.update(self.display_surface.get_image())
