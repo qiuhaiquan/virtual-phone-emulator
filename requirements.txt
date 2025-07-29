@@ -10,7 +10,7 @@ psutil>=5.9.0
 pyaudio>=0.2.14
 PyOpenGL>=3.1.9
 PyOpenGL_accelerate>=3.1.9
-PIL>=3
+Pillow>=11.3.0
 # 开发工具
 pytest>=7.1.2
 flake8>=4.0.1

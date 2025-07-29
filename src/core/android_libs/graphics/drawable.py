@@ -1,24 +1,25 @@
 # android_libs/graphics/drawable.py
+# -*- coding: utf-8 -*-
 class Drawable:
-    """Ä£Äâ android.graphics.drawable.Drawable Àà"""
+    """æ¨¡æ‹Ÿ android.graphics.drawable.Drawable ç±»"""
 
     def __init__(self, hardware_abstraction):
         self.hardware_abstraction = hardware_abstraction
 
     def draw(self, canvas):
-        """ÔÚCanvasÉÏ»æÖÆ"""
+        """åœ¨Canvasä¸Šç»˜åˆ¶"""
         pass
 
 
 class ColorDrawable(Drawable):
-    """Ä£Äâ android.graphics.drawable.ColorDrawable Àà"""
+    """æ¨¡æ‹Ÿ android.graphics.drawable.ColorDrawable ç±»"""
 
     def __init__(self, hardware_abstraction, color):
         super().__init__(hardware_abstraction)
         self.color = color
 
     def draw(self, canvas):
-        # »ñÈ¡±ß½ç
+        # è·å–è¾¹ç•Œ
         bounds = self.get_bounds()
         if bounds:
             left, top, right, bottom = bounds
