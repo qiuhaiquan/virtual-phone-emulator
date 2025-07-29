@@ -7,6 +7,7 @@ import os
 import sys
 
 from src.config import Config
+from src.core.dalvik.android_runtime import AndroidRuntime
 from src.core.hardware.abstraction import HardwareAbstractionLayer
 
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -35,6 +36,7 @@ def main():
     args = parser.parse_args()
     config = Config().to_dict()
     hardware = HardwareAbstractionLayer(config)
+    runtime = AndroidRuntime(hardware, "src/core/android_libs.zip")
     atexit.register(hardware.cleanup)
 
     # 设置日志级别
